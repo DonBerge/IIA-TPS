@@ -19,7 +19,7 @@ Pacman agents (in searchAgents.py).
 
 import util
 from game import Directions
-from typing import List
+from typing import List, Any
 
 class SearchProblem:
     """
@@ -75,21 +75,43 @@ def tinyMazeSearch(problem: SearchProblem) -> List[Directions]:
     w = Directions.WEST
     return  [s, s, w, s, w, w, s, w]
 
-def depthFirstSearch(problem: SearchProblem) -> List[Directions]:
-    """
-    Search the deepest nodes in the search tree first.
+def generalSearch(problem, ListConstructor, ListEmpty, ListTake, ListExpand ):
+    l = ListConstructor((problem.getStartState(), None, None))
+    # Store the visited node with its predecesor and the direction
+    # taken, this is used to reconstruct
+    # execution path
+    visited = dict()
+    while not ListEmpty(l):
+        state, parent, dirp = ListTake(l)
+        if state in visited:
+            continue
+        visited[state]=(parent, dirp)
+        if problem.isGoalState(state):
+            # reconstruct directions
+            return reconstructDirections(problem.getStartState(), state, visited)
+        l = ListExpand(l, state)
+        #for successor, direction, _ in problem.getSuccessors(state):
+        #    stack.push((successor, state, direction))
+    return []
 
-    Your search algorithm needs to return a list of actions that reaches the
-    goal. Make sure to implement a graph search algorithm.
+def reconstructDirections(start : Any, end: Any, visited_map: dict[Any, tuple[Any, Directions]]):
+    directions = []
+    node = end
 
-    To get started, you might want to try some of these simple commands to
-    understand the search problem that is being passed in:
+    while node != start:
+        parent, direction = visited_map[node]
+        if parent == None:
+            # Reached start
+            break
+        # Insert direction at the start
+        directions.append(direction)
+        node = parent
+    # The directions have been inserted in reverse order, reverse the
+    # directions list
+    directions.reverse()
+    return directions
 
-    print("Start:", problem.getStartState())
-    print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
-    print("Start's successors:", problem.getSuccessors(problem.getStartState()))
-    """
-    "*** YOUR CODE HERE ***"
+def dfs1(problem: SearchProblem) -> List[Directions]:
     start = problem.getStartState()
     stack = util.Stack()
     stack.push((start, []))
@@ -105,6 +127,57 @@ def depthFirstSearch(problem: SearchProblem) -> List[Directions]:
         for successor, direction, _ in problem.getSuccessors(state):
             stack.push((successor, directions + [direction]))
     return []
+
+def dfs2(problem: SearchProblem) -> List[Directions]:
+    start = problem.getStartState()
+    stack = util.Stack()
+    stack.push((start, None, None))
+    # Store the visited node with its predecesor and the direction
+    # taken, this is used to reconstruct
+    # execution path
+    visited = dict()
+    while not stack.isEmpty():
+        state, parent, dirp = stack.pop()
+        if state in visited:
+            continue
+        visited[state]=(parent, dirp)
+        if problem.isGoalState(state):
+            # reconstruct directions
+            return reconstructDirections(problem.getStartState(), state, visited)
+        for successor, direction, _ in problem.getSuccessors(state):
+            stack.push((successor, state, direction))
+    return []
+
+def dfs3(problem: SearchProblem) -> List[Directions]:
+    def create(x: Any):
+        c = util.Stack()
+        c.push(x)
+        return c
+    def take(x):
+        return x.pop()
+    def empty(x):
+        return x.isEmpty()
+    def expand(stack, state):
+        for successor, direction, _ in problem.getSuccessors(state):
+            stack.push((successor, state, direction))
+        return stack
+    return generalSearch(problem, create, empty, take, expand)
+
+def depthFirstSearch(problem: SearchProblem) -> List[Directions]:
+    """
+    Search the deepest nodes in the search tree first.
+
+    Your search algorithm needs to return a list of actions that reaches the
+    goal. Make sure to implement a graph search algorithm.
+
+    To get started, you might want to try some of these simple commands to
+    understand the search problem that is being passed in:
+
+    print("Start:", problem.getStartState())
+    print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
+    print("Start's successors:", problem.getSuccessors(problem.getStartState()))
+    """
+    return dfs3(problem)
 
 
 def breadthFirstSearch(problem: SearchProblem) -> List[Directions]:
