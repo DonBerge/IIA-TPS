@@ -144,7 +144,8 @@ def uniformCostSearch(problem: SearchProblem) -> List[Directions]:
             return directions
         for successor, direction, _ in problem.getSuccessors(state):
             ndirs = directions + [direction]
-            stack.push((successor, ndirs), problem.getCostOfActions(ndirs))
+            cost = problem.getCostOfActions(ndirs)
+            stack.push((successor, ndirs), cost)
     return []
 
 def nullHeuristic(state, problem=None) -> float:
@@ -156,8 +157,23 @@ def nullHeuristic(state, problem=None) -> float:
 
 def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic) -> List[Directions]:
     """Search the node that has the lowest combined cost and heuristic first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    start = problem.getStartState()
+    stack = util.PriorityQueue()
+    stack.push((start, []), 0)
+    visited = set()
+    while not stack.isEmpty():
+        state, directions = stack.pop()
+        if state in visited:
+            continue
+        visited.add(state)
+        if problem.isGoalState(state):
+            # Retry to find the rest of the pills
+            return directions
+        for successor, direction, _ in problem.getSuccessors(state):
+            ndirs = directions + [direction]
+            cost = problem.getCostOfActions(ndirs) + heuristic(successor, problem)
+            stack.push((successor, ndirs), cost)
+    return []
 
 # Abbreviations
 bfs = breadthFirstSearch
