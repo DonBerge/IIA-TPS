@@ -90,17 +90,62 @@ def depthFirstSearch(problem: SearchProblem) -> List[Directions]:
     print("Start's successors:", problem.getSuccessors(problem.getStartState()))
     """
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    start = problem.getStartState()
+    stack = util.Stack()
+    stack.push((start, []))
+    visited = set()
+    while not stack.isEmpty():
+        state, directions = stack.pop()
+        if state in visited:
+            continue
+        visited.add(state)
+        if problem.isGoalState(state):
+            # Retry to find the rest of the pills
+            return directions
+        for successor, direction, _ in problem.getSuccessors(state):
+            stack.push((successor, directions + [direction]))
+    return []
+
 
 def breadthFirstSearch(problem: SearchProblem) -> List[Directions]:
     """Search the shallowest nodes in the search tree first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+
+    start = problem.getStartState()
+    stack = util.Queue()
+    stack.push((start, []))
+    visited = set()
+    while not stack.isEmpty():
+        state, directions = stack.pop()
+        if state in visited:
+            continue
+        visited.add(state)
+        if problem.isGoalState(state):
+            # Retry to find the rest of the pills
+            return directions
+        for successor, direction, _ in problem.getSuccessors(state):
+            stack.push((successor, directions + [direction]))
+    return []
 
 def uniformCostSearch(problem: SearchProblem) -> List[Directions]:
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    start = problem.getStartState()
+    stack = util.PriorityQueue()
+    stack.push((start, []), 0)
+    visited = set()
+    while not stack.isEmpty():
+        state, directions = stack.pop()
+        if state in visited:
+            continue
+        visited.add(state)
+        if problem.isGoalState(state):
+            # Retry to find the rest of the pills
+            return directions
+        for successor, direction, _ in problem.getSuccessors(state):
+            ndirs = directions + [direction]
+            stack.push((successor, ndirs), problem.getCostOfActions(ndirs))
+    return []
 
 def nullHeuristic(state, problem=None) -> float:
     """
