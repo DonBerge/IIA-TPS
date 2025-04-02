@@ -77,44 +77,62 @@ def tinyMazeSearch(problem: SearchProblem) -> List[Directions]:
     w = Directions.WEST
     return [s, s, w, s, w, w, s, w]
 
+#### Implementation of search functions
 
-# A type hint for a generic search list
-GeneralSearchList = Any
-
-# The return type of list take
-# A tuple of the form (state, parent, direction)
+# Type hint for the state of the search
+# A tuple of the form (state, parent, direction, accum)
 # where 
 #   state is the current state
 #   parent is the state from which the current state was reached 
 #   direction is the direction taken to reach the current state
 #   accum is the accumulated cost of the path
-State = tuple[Any, Any, Directions, int]
+GeneralSearchState = tuple[Any, Any, Directions, int]
 
-# Implementation of the generic search algorithm
+# An abstract class that represents a list used in the
+# general search algorithm
+class GeneralSearchList:
+    def isEmpty(self) -> bool:
+        """
+        Returns True if the list is empty
+        """
+        util.raiseNotDefined()
+    
+    def pop(self) -> GeneralSearchState:
+        """
+        Returns the first element of the list
+        """
+        util.raiseNotDefined()
+
+    def push(self, state: GeneralSearchState) -> None:
+        """
+        Pushes the state to the list
+        """
+        util.raiseNotDefined()
+
+# Implementation of the general search algorithm
 def generalSearch(
     problem: SearchProblem,
-    ListConstructor: Callable[[State], GeneralSearchList],
-    ListEmpty: Callable[[GeneralSearchList], bool],
-    ListTake: Callable[[GeneralSearchList], State],
-    ListPush: Callable[[GeneralSearchList, State], GeneralSearchList],
+    GeneralList: Callable[[], GeneralSearchList]
 ):
-    # Construct the list with the start state
-    # The list will contain tuples of the form (state, parent, direction)
-    # where state is the current state, parent is the state from which
-    # the current state was reached and direction is the direction taken
-    # to reach the current state
-    l = ListConstructor(
+    # Construct the initial list
+    l = GeneralList()
+
+    # Push the initial state to the list
+    # The initial state is the start state of the problem
+    # There is no parent or direction, so we set them to None
+    # The cost is calculated using the problem object
+    l.push(
         (problem.getStartState(), None, None, problem.getCostOfActions([]))
     )
 
     # Store the visited node with its predecesor and the direction
-    # taken, this is used to reconstruct
-    # execution path
+    # taken, this is used to check for already visited nodes
+    # and to reconstruct the path once we reach the goal
     visited = dict()
 
-    while not ListEmpty(l):
+    while not l.isEmpty():
         # Take an element from the list
-        state, parent, dirp, accum = ListTake(l)
+        state, parent, dirp, accum = l.pop()
 
         if state in visited:
             # Already visited, skip it
@@ -131,15 +149,13 @@ def generalSearch(
 
         # Expand the list with the successors of the current state
         for successor, direction, cost in problem.getSuccessors(state):
-            ListPush(l, (successor, state, direction, accum + cost))
+            l.push((successor, state, direction, accum + cost))
 
     # If we reach here, it means we have not found a solution
     return []
 
 # Reconstruct the directions from the start state to the end state
 # using the visited dictionary
-
-
 def reconstructDirections(
     end: Any,
     visited_map: dict[Any, tuple[Any, Directions]]
@@ -173,38 +189,12 @@ def depthFirstSearch(problem: SearchProblem) -> List[Directions]:
     print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
     print("Start's successors:", problem.getSuccessors(problem.getStartState()))
     """
-    def create(x: Any):
-        c = util.Stack()
-        c.push(x)
-        return c
-
-    def take(x):
-        return x.pop()
-
-    def empty(x):
-        return x.isEmpty()
-
-    def push(stack, state):
-        stack.push(state)
-    return generalSearch(problem, create, empty, take, push)
+    return generalSearch(problem, util.Stack)
 
 
 def breadthFirstSearch(problem: SearchProblem) -> List[Directions]:
     """Search the shallowest nodes in the search tree first."""
-    def create(x) -> util.Queue:
-        c = util.Queue()
-        c.push(x)
-        return c
-
-    def take(x: util.Queue):
-        return x.pop()
-
-    def empty(x: util.Queue):
-        return x.isEmpty()
-
-    def push(queue: util.Queue, state):
-        queue.push(state)
-    return generalSearch(problem, create, empty, take, push)
+    return generalSearch(problem, util.Queue)
 
 
 def uniformCostSearch(problem: SearchProblem) -> List[Directions]:
@@ -213,21 +203,12 @@ def uniformCostSearch(problem: SearchProblem) -> List[Directions]:
     # f: funcion de costo de ruta
     # f(a,...,b,...c) = f(a,...b)+f(b,...c)
     
-    def create(x) -> util.PriorityQueue:
-        c = util.PriorityQueue()
-        c.push(x, x[3])
-        return c
-
-    def take(x: util.PriorityQueue):
-        return x.pop()
+    def UCSPriorityQueue():
+        # Priority queue with the cost as the priority
+        # The cost is the 4th element of the tuple
+        return util.PriorityQueueWithFunction(lambda x: x[3])
     
-    def empty(x: util.PriorityQueue):
-        return x.isEmpty()
-    
-    def push(queue: util.PriorityQueue, state):
-        queue.push(state, state[3])
-    
-    return generalSearch(problem, create, empty, take, push)
+    return generalSearch(problem, UCSPriorityQueue)
 
 
 def nullHeuristic(state, problem=None) -> float:
@@ -242,22 +223,14 @@ def aStarSearch(
         problem: SearchProblem, heuristic=nullHeuristic) -> List[Directions]:
     """Search the node that has the lowest combined cost and heuristic first."""
     
-    def create(x) -> util.PriorityQueueWithFunction:
-        priority = lambda s: s[3] + heuristic(s[0], problem)
-        c = util.PriorityQueueWithFunction(priority)
-        c.push(x)
-        return c
+    def AStarPriorityQueue():
+        # Priority queue with the cost + heuristic as the priority
+        # The cost is the 4th element of the tuple
+        return util.PriorityQueueWithFunction(
+            lambda x: x[3] + heuristic(x[0], problem)
+        )
 
-    def take(x: util.PriorityQueue):
-        return x.pop()
-    
-    def empty(x: util.PriorityQueue):
-        return x.isEmpty()
-    
-    def push(queue: util.PriorityQueueWithFunction, state):
-        queue.push(state)
-
-    return generalSearch(problem, create, empty, take, push)
+    return generalSearch(problem, AStarPriorityQueue)
 
 
 # Abbreviations
