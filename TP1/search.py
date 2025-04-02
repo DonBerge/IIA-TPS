@@ -88,7 +88,7 @@ def tinyMazeSearch(problem: SearchProblem) -> List[Directions]:
 #   accum is the accumulated cost of the path
 GeneralSearchState = tuple[Any, Any, Directions, int]
 
-# An abstract class that represents a list used in the
+# An abstract class that represents a data structure used in the
 # general search algorithm
 class GeneralSearchList:
     def isEmpty(self) -> bool:
