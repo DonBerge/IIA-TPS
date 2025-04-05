@@ -296,14 +296,14 @@ class CornersProblem(search.SearchProblem):
         space)
         """
         "*** YOUR CODE HERE ***"
-        return ((self.startingPosition), frozenset())
+        return ((self.startingPosition), (False, False, False, False))
 
     def isGoalState(self, state: Any):
         """
         Returns whether this search state is a goal state of the problem.
         """
         "*** YOUR CODE HERE ***"
-        return state[1] == frozenset(self.corners)
+        return all(state[1])
 
     def getSuccessors(self, state: Any):
         """
@@ -336,10 +336,11 @@ class CornersProblem(search.SearchProblem):
                 corners = state[1]
 
                 if (nextState in self.corners):
-                    newCorners = corners.union([nextState])
+                    index = (self.corners.index(nextState))
+                    newCorners = corners[:index] + (True,) + corners[index+1:]
                     successors.append( ((nextState, newCorners), action, 1) )
                 else:
-                    successors.append( ((nextState, state[1]), action, 1) )
+                    successors.append( ((nextState, corners), action, 1) )
 
 
 
@@ -358,7 +359,6 @@ class CornersProblem(search.SearchProblem):
             x, y = int(x + dx), int(y + dy)
             if self.walls[x][y]: return 999999
         return len(actions)
-
 
 
 def cornersHeuristic(state: Any, problem: CornersProblem):
