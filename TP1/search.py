@@ -223,11 +223,24 @@ def aStarSearch(
         problem: SearchProblem, heuristic=nullHeuristic) -> List[Directions]:
     """Search the node that has the lowest combined cost and heuristic first."""
     
+    def fun(x):
+        # verificar consistencia
+        if(x[1] is not None):
+            h0 = heuristic(x[0], problem)
+            h1 = heuristic(x[1], problem)
+            if h0 > 1 + h1:
+                print("Heuristica no consistente!")
+                print("Para los estados, ",x[0], " y ", x[1])
+                print(h0, ">", "1+", h1)
+                #assert(False)
+        return x[3] + heuristic(x[0], problem)
+    
     def AStarPriorityQueue():
         # Priority queue with the cost + heuristic as the priority
         # The cost is the 4th element of the tuple
         return util.PriorityQueueWithFunction(
-            lambda x: x[3] + heuristic(x[0], problem)
+            fun
+            #lambda x: x[3] + heuristic(x[0], problem)
         )
 
     return generalSearch(problem, AStarPriorityQueue)

@@ -360,6 +360,50 @@ class CornersProblem(search.SearchProblem):
             if self.walls[x][y]: return 999999
         return len(actions)
 
+# Find closest point to a given point p in a set of points using the given
+# distance function with the corresponding distance
+def findClosest(p, points, d):
+    """
+    p: a point (x,y)
+    points: a list of points [(x1,y1), (x2,y2), ...]
+    d: a distance function that takes two points and returns a distance
+    """
+    closest = None
+    minDistance = float('inf')
+    for point in points:
+        distance = d(p, point)
+        if distance < minDistance:
+            minDistance = distance
+            closest = point
+    return (closest, minDistance)
+
+def manhattanDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> int:
+    "Returns the Manhattan distance between two points"
+    x1, y1 = point1
+    x2, y2 = point2
+    return abs(x1 - x2) + abs(y1 - y2)
+
+def euclideanDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> float:
+    "Returns the Euclidean distance between two points"
+    x1, y1 = point1
+    x2, y2 = point2
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+
+def normaInfinitoDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> int:
+    "Returns the infinity norm distance between two points"
+    x1, y1 = point1
+    x2, y2 = point2
+    return max(abs(x1 - x2), abs(y1 - y2))
+
+def checkAllPosibilities(p, corners, d):
+    if len(corners) == 0:
+        return 0
+    mini = float('inf')
+    for corner in corners:
+        ncorners = corners.copy()
+        ncorners.remove(corner)
+        mini = min(mini, d(p,corner) + checkAllPosibilities(corner, ncorners, d))
+    return mini
 
 def cornersHeuristic(state: Any, problem: CornersProblem):
     """
@@ -377,9 +421,25 @@ def cornersHeuristic(state: Any, problem: CornersProblem):
     corners = problem.corners # These are the corner coordinates
     walls = problem.walls # These are the walls of the maze, as a Grid (game.py)
 
-    "*** YOUR CODE HERE ***"
-    return 0 # Default to trivial solution
+    nonVisitedCorners = [corners[i] for i in range(4) if not state[1][i]]
 
+    return checkAllPosibilities(state[0], nonVisitedCorners, manhattanDistance)
+
+    p = state[0] # Pacman's position
+    totalDistance = 0
+    
+    while len(nonVisitedCorners) != 0:
+        p,d = findClosest(p, nonVisitedCorners, normaInfinitoDistance)
+        nonVisitedCorners.remove(p)
+        totalDistance+=d
+
+    return totalDistance # Default to trivial solution
+
+class CornersAgent(SearchAgent):
+    "A SearchAgent for CornersProblem using DFS"
+    def __init__(self):
+        self.searchFunction = search.breadthFirstSearch
+        self.searchType = CornersProblem
 
 
 class AStarCornersAgent(SearchAgent):
