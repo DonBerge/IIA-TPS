@@ -16,4 +16,4 @@ sigue sin ser consistente pero la diferencia entre h(n) y c(n,n')+h(n') es cada 
 
 Metodo 1 usando la norma infinito: Aparentemente consistente y expande muchisimos menos nodos.
 
-Revisar todos los ordenes posibles para visitar las esquinas y calcular el menor recorrido total entre todos los ordenes. Puede sonar prohibitivamente lento(de hecho, la complejidad es O(n!) por caca calculo de la heuristica), pero como solo son 4 pastillas no se realizan tantos calculos. Se pueden precomputar algunos resultados para bajar la complejidad a O(1).
+Revisar todos los ordenes posibles para visitar las esquinas y calcular el menor recorrido total entre todos los ordenes. Puede sonar prohibitivamente lento(de hecho, la complejidad es O(n!) por cada calculo de la heuristica), pero como solo son 4 pastillas no se realizan tantos calculos. Se pueden precomputar algunos resultados para bajar la complejidad a O(1). Es aparentemente admisible y consistente, disminuye muchisimo la cantidad de nodos explorados y cumple con la meta de menos de 800 nodos explorados en mediumCorners.

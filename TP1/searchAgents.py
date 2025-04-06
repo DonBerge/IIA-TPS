@@ -395,7 +395,8 @@ def normaInfinitoDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> i
     x2, y2 = point2
     return max(abs(x1 - x2), abs(y1 - y2))
 
-def checkAllPosibilities(p, corners, d):
+# TODO: memoize
+def checkAllPosibilities(p, corners, d, memoize=False):
     if len(corners) == 0:
         return 0
     mini = float('inf')
@@ -403,6 +404,7 @@ def checkAllPosibilities(p, corners, d):
         ncorners = corners.copy()
         ncorners.remove(corner)
         mini = min(mini, d(p,corner) + checkAllPosibilities(corner, ncorners, d))
+    
     return mini
 
 def cornersHeuristic(state: Any, problem: CornersProblem):
