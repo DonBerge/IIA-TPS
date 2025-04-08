@@ -218,6 +218,7 @@ def nullHeuristic(state, problem=None) -> float:
     """
     return 0
 
+CHECK_HEURISTIC_CONSISTENCY = False
 
 def aStarSearch(
         problem: SearchProblem, heuristic=nullHeuristic) -> List[Directions]:
@@ -225,7 +226,7 @@ def aStarSearch(
     
     def fun(x):
         # verificar consistencia
-        if(x[1] is not None):
+        if CHECK_HEURISTIC_CONSISTENCY and x[1] is not None:
             h0 = heuristic(x[0], problem)
             h1 = heuristic(x[1], problem)
             if h0 > 1 + h1:

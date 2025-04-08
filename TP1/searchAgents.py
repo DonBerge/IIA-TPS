@@ -309,15 +309,15 @@ class CornersProblem(search.SearchProblem):
         top, right = self.walls.height-2, self.walls.width-2
         self.corners = [(1, 1), (1, top), (right, 1), (right, top)]
 
-        cornersWithFood = self.corners.copy()
+        # We only care about corners wiith food or capsules
+        cornersWithFood = []
         for corner in self.corners:
             if not startingGameState.hasFood(*corner) and corner not in startingGameState.getCapsules():
                 print('Warning: no food in corner ' + str(corner))
-                cornersWithFood.remove(corner)
+            else:
+                cornersWithFood.append(corner)
         self.corners = tuple(cornersWithFood)
         self._expanded = 0  # DO NOT CHANGE; Number of search nodes expanded
-
-        print(self.corners)
 
     def getStartState(self):
         """
@@ -393,8 +393,6 @@ class CornersProblem(search.SearchProblem):
 
 # Find closest point to a given point p in a set of points using the given
 # distance function with the corresponding distance
-
-
 def findClosest(p, points, d):
     """
     p: a point (x,y)
@@ -417,90 +415,15 @@ def manhattanDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> int:
     x2, y2 = point2
     return abs(x1 - x2) + abs(y1 - y2)
 
-
-def euclideanDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> float:
-    "Returns the Euclidean distance between two points"
-    x1, y1 = point1
-    x2, y2 = point2
-    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
-
-
-def normaInfinitoDistance(point1: Tuple[int, int], point2: Tuple[int, int]) -> int:
-    "Returns the infinity norm distance between two points"
-    x1, y1 = point1
-    x2, y2 = point2
-    return max(abs(x1 - x2), abs(y1 - y2))
-
-
-memo = {}
-
-
-def checkAllPosibilities(p, corners, d, memoize=False):
-    if len(corners) == 0:
-        return 0
-    if memo.get((p, corners)) is not None:
-        return memo[(p, corners)]
-
-    mini = float('inf')
-    for corner in corners:
-        ncorners = corners - {corner}
-        mini = min(mini, d(p, corner) +
-                   checkAllPosibilities(corner, ncorners, d, memoize))
-
-    if memoize:
-        memo[(p, corners)] = mini
-
-    return mini
-
-
 def greedyDistance(p, points, dist):
-    if (len(points) == 0):
-        return 0
     d = 0
-    while (len(points) > 0):
+    while len(points) > 0:
         p, d1 = findClosest(p, points, dist)
         d += d1
         points.remove(p)
     return d
 
-# def getFromMemo(p, nvcorners, problem: CornersProblem):
-#    if(p in problem.corners):
-
-
 def cornersHeuristic(state: Any, problem: CornersProblem):
-    corners = problem.corners  # These are the corner coordinates
-    # These are the walls of the maze, as a Grid (game.py)
-    walls = problem.walls
-
-    nonVisitedCorners = [corners[i]
-                         for i in range(len(corners)) if not state[1][i]]
-
-    # La esquna origen es (1,1), resto 1 al alto y ancho original para ponerla
-    # en el origen de coordenadas
-    h, l = walls.height-3, walls.width-3
-
-    if len(nonVisitedCorners) == 0:
-        return 0
-
-    distance = manhattanDistance
-
-    d = float('inf')
-    for corner in nonVisitedCorners:
-        cornerDistance = distance(state[0], corner)
-        if len(nonVisitedCorners) == 4:
-            cornerDistance += min(2*l+h, 2*h+l)
-        else:
-            nvcopy = nonVisitedCorners.copy()
-            nvcopy.remove(corner)
-            cornerDistance += greedyDistance(corner, nvcopy, distance)
-
-        d = min(d, cornerDistance)
-
-    return d
-    # return greedyDistance(state[0], nonVisitedCorners, manhattanDistance)
-
-
-def cornersHeuristic2(state: Any, problem: CornersProblem):
     """
     A heuristic for the CornersProblem that you defined.
 
@@ -514,23 +437,28 @@ def cornersHeuristic2(state: Any, problem: CornersProblem):
     admissible.
     """
     corners = problem.corners  # These are the corner coordinates
-    # These are the walls of the maze, as a Grid (game.py)
-    walls = problem.walls
 
-    nonVisitedCorners = frozenset([corners[i]
-                                  for i in range(4) if not state[1][i]])
+    nonVisitedCorners = [corners[i]
+                         for i in range(len(corners)) if not state[1][i]]
 
-    # if is empty memo, then memoize results
-    if len(memo) == 0:
-        for corner in corners:
-            ncorners = frozenset(corners) - {corner}
-            checkAllPosibilities(corner, ncorners, manhattanDistance, True)
-    return checkAllPosibilities(state[0], nonVisitedCorners, manhattanDistance, False)
+    if len(nonVisitedCorners) == 0:
+        return 0
+
+    d = float('inf')
+    for corner in nonVisitedCorners:
+        cornerDistance = manhattanDistance(state[0], corner)
+
+        nvcopy = nonVisitedCorners.copy()
+        nvcopy.remove(corner)
+        cornerDistance += greedyDistance(corner, nvcopy, manhattanDistance)
+
+        d = min(d, cornerDistance)
+
+    return d
 
 
 class CornersAgent(SearchAgent):
-    "A SearchAgent for CornersProblem using DFS"
-
+    "A SearchAgent for CornersProblem using BFS"
     def __init__(self):
         self.searchFunction = search.breadthFirstSearch
         self.searchType = CornersProblem
@@ -544,6 +472,16 @@ class AStarCornersAgent(SearchAgent):
             prob, cornersHeuristic)
         self.searchType = CornersProblem
 
+###
+def manhattanCircleDistance(p, center, radius):
+    # The center from a point to a circunference its the distance to the center
+    # minus the radius. In the case of a circle if the distance is
+    # negative(ie, the point is inside the circle) we return 0
+
+    d = manhattanDistance(p, center) - radius
+    if d < 0:
+        return 0
+    return d 
 
 class FoodSearchProblem:
     """
@@ -562,6 +500,35 @@ class FoodSearchProblem:
         self.startingGameState = startingGameState
         self._expanded = 0  # DO NOT CHANGE
         self.heuristicInfo = {}  # A dictionary for the heuristic to store information
+
+        # Group the food in circles
+        NUMBER_OF_CIRCLES = 4
+        
+        foods = self.start[1].asList()
+        
+        circle_size = len(foods) // NUMBER_OF_CIRCLES
+        foodCircles = []
+        foodsPerCircle = []
+
+        # The circles completely covers their corresponding food, but its
+        # not necesarily the smallest circle that covers all the food
+        for i in range(NUMBER_OF_CIRCLES):
+            p = foods.pop()
+            foodsInCircle = [p]
+            if i == NUMBER_OF_CIRCLES-1:
+                # The last circle can be greater than the others
+                circle_size = len(foods)
+            while len(foodsInCircle) < circle_size:
+                p = findClosest(p, foods, manhattanDistance)[0]
+                foods.remove(p)
+                foodsInCircle.append(p)
+
+            foodCircles.append(minimumBoundingBox(foodsInCircle))        
+            foodsPerCircle.append(set(foodsInCircle))
+
+
+        self.heuristicInfo['foodCircles'] = foodCircles
+        self.heuristicInfo['foodsPerCircle'] = foodsPerCircle
 
     def getStartState(self):
         return self.start
@@ -597,6 +564,18 @@ class FoodSearchProblem:
             cost += 1
         return cost
 
+def minimumBoundingBox(points):
+    """
+    Returns the minimum bounding box that covers all the points
+    """
+    minX = min([p[0] for p in points])
+    maxX = max([p[0] for p in points])
+    minY = min([p[1] for p in points])
+    maxY = max([p[1] for p in points])
+
+    center = ((minX + maxX) // 2, (minY + maxY) // 2)
+    radius = max(center[0] - minX, maxX - center[0])+max(center[1] - minY, maxY - center[1])
+    return (center, radius)
 
 class AStarFoodSearchAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"
@@ -606,6 +585,26 @@ class AStarFoodSearchAgent(SearchAgent):
             prob, foodHeuristic)
         self.searchType = FoodSearchProblem
 
+class FoodSearchAgent(SearchAgent):
+    """
+    A SearchAgent for FoodSearchProblem using bfs
+    """
+
+    def __init__(self):
+        self.searchFunction = search.breadthFirstSearch
+        self.searchType = FoodSearchProblem
+
+
+def findBestPath(p, circles):
+    if len(circles) == 0:
+        return 0
+    
+    mini = float('inf')
+    for circle in circles:
+        circopy = circles.copy()
+        circopy.remove(circle)
+        mini = min(mini, manhattanCircleDistance(p,*circle)+findBestPath(circle[0],circopy))
+    return mini
 
 def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     """
@@ -632,8 +631,25 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     """
     position, foodGrid = state
     "*** YOUR CODE HERE ***"
-    return 0
+    
+    circles = problem.heuristicInfo["foodCircles"]
+    foodsPerCircle = problem.heuristicInfo["foodsPerCircle"]
 
+    # remove circles that have no food
+    circlesWithFood = set()
+
+    for food in foodGrid.asList():
+        if(len(circlesWithFood) == len(circles)):
+            break
+        for circleIndex in range(len(circles)):
+            if food in foodsPerCircle[circleIndex]:
+                circlesWithFood.add(circleIndex)
+                break
+    
+    ccc = [circles[i] for i in circlesWithFood]
+
+    return findBestPath(position, ccc) + len(foodGrid.asList())
+    
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
