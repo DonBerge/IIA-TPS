@@ -500,6 +500,23 @@ def makeSegments(x0, y0, xf, yf, segments, partitionHeight=False):
         s2 = makeSegments(middle+1, y0, xf, yf, segments // 2, not partitionHeight)
     return s1.union(s2)
 
+def restrainSegment(segment, foods):
+    """
+    Restringe el segmento para que las esquinas tengan pastillas
+    """
+    foodsInSegment = [food for food in foods if withinSegment(food, *segment)]
+
+    if(len(foodsInSegment) == 0):
+        # No hay pastillas en el segmento
+        return None
+
+    x0 = min(foodsInSegment, key=lambda x: x[0])[0]
+    y0 = min(foodsInSegment, key=lambda x: x[1])[1]
+    xf = max(foodsInSegment, key=lambda x: x[0])[0]
+    yf = max(foodsInSegment, key=lambda x: x[1])[1]
+
+    return (x0, y0, xf, yf)
+
 class FoodSearchProblem:
     """
     A search problem associated with finding the a path that collects all of the
@@ -522,7 +539,7 @@ class FoodSearchProblem:
         # Dividir el tablero en cuadriculas de tamaño similar que no se solapen
         # entre si. Cada cuadricula representa a un conjunto de pastillas.
         # La heuristica consiste en el camino mas corto que visita todas las
-        # cuadriculas mas el numero de pastillas restantes en el tablero
+        # cuadriculas.
 
         # Divido el tablero en sectores que no se solapan
         # SEGMENTS indica la cantidad de cuadriculas en las que se divide el
@@ -534,6 +551,8 @@ class FoodSearchProblem:
         # SEGMENTS DEBE SER UNA POTENCIA DE 2
         assert SEGMENTS & (SEGMENTS - 1) == 0, "SEGMENTS debe ser una potencia de 2"
         
+        foods = startingGameState.getFood().asList()
+
         mazeDivided = False
         while(not mazeDivided):
             try:
@@ -543,9 +562,12 @@ class FoodSearchProblem:
             else:
                 mazeDivided = True
 
-        # Solo dejo los segmentos que tienen pastillas
-        segments = filterSegmentsWithFood(segments, startingGameState.getFood().asList())
-
+        # Restrinjo las dimensiones de los segmentos para que no ocupen espacio
+        # extra
+        segments = set(restrainSegment(segment, foods) for segment in segments) 
+        # Descarta los segmentos sin pastillas     
+        segments.discard(None)
+        
         print("Maze divided in", len(segments), "segments")
 
         import __main__
@@ -717,8 +739,9 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
 
     # frozenset es requerido ya que los argumentos de findBestPath deben ser
     # hasheables para poder ser cacheados
-    return max(findBestPath(position, frozenset(segmentsWithFood)), len(foods))
-    
+    a = findBestPath(position, frozenset(segmentsWithFood)) + len(segmentsWithFood)
+    print(a)
+    exit(1)
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"

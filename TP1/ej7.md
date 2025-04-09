@@ -1,9 +1,15 @@
-La heuristica elegida para ejercicio 7 consiste en dividir el tablero en cuadriculas no superponibles(en el codigo son 16 cuadriculas). En esta division posiblemente halla cuadriculas que no tengan pastillas y otras que si. A la hora de calcular la heuristica, se calcula el largo del minimo camino que visita todas las cuadriculas que tienen pastillas + la cantidad de pastillas restantes del tablero.
+La heuristica elegida para ejercicio 7 consiste en dividir el tablero en cuadriculas no superponibles(en el codigo son 16 cuadriculas). En esta division posiblemente halla cuadriculas que no tengan pastillas y otras que si. A la hora de calcular la heuristica, se calcula el largo del minimo camino que visita todas las cuadriculas que tienen pastillas + la cantidad de cuadriculas a visitar.
 
 Esta heuristica surgio de la idea de generalizar el problema de visitar las 4 esquinas del tablero al problema de comer todas las pastillas. En este caso cada cuadricula representa una "esquina" a visitar, solo que las cuadriculas ocupan mas espacio.
 
 
-![alt text](image.png)
+Por ejemplo para el layout trickySearch, el laberinto se divide en 16 cuadriculas.
+
+![alt text](<Captura desde 2025-04-09 20-07-23.png>)
+
+Si se eliminan las cuadriculas sin pastillas y se restringe el tamaño de manera
+que haya esquinas ocupadas por pastillas.
+
 
 *Ejemplo de division del tablero "trickySearch" en 16 cuadriculas, las cuadriculas que no tienen pastillas se ocultaron. En este caso, un camino optimo consiste en visitar la cuadricula azul, luego la roja, luego la verde y por ultimo la naranja con un costo de 12. El costo minimo para resolver el laberinto es de 60.*
 
