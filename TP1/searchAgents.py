@@ -473,15 +473,26 @@ class AStarCornersAgent(SearchAgent):
         self.searchType = CornersProblem
 
 ###
-def manhattanCircleDistance(p, center, radius):
-    # The center from a point to a circunference its the distance to the center
-    # minus the radius. In the case of a circle if the distance is
-    # negative(ie, the point is inside the circle) we return 0
 
-    d = manhattanDistance(p, center) - radius
-    if d < 0:
-        return 0
-    return d 
+# Divide un rectangulo definido por las esquinas
+# opuestas (x0,y0) y (xf,yf) en segmentos que no se solapan
+def makeSegments(x0, y0, xf, yf, segments, partitionHeight=False):
+    if(segments == 1):
+        return set([(x0, y0, xf, yf)])
+    # Si partitionHeight es True, se parte el tablero en segmentos
+    # de altura igual, si no, se parte en segmentos de ancho igual
+    if partitionHeight:
+        middle = (y0 + yf) // 2
+        # Las mitades restantes se dividen en segmentos de igual ancho
+        s1 = makeSegments(x0, y0, xf, middle, segments // 2, not partitionHeight)
+        s2 = makeSegments(x0, middle+1, xf, yf, segments // 2, not partitionHeight)
+    else:
+        # Se parte el tablero en segmentos de igual ancho
+        middle = (x0 + xf) // 2
+        # Las mitades restantes se dividen en segmentos de igual altura
+        s1 = makeSegments(x0, y0, middle, yf, segments // 2, not partitionHeight)
+        s2 = makeSegments(middle+1, y0, xf, yf, segments // 2, not partitionHeight)
+    return s1.union(s2)
 
 class FoodSearchProblem:
     """
@@ -500,36 +511,27 @@ class FoodSearchProblem:
         self.startingGameState = startingGameState
         self._expanded = 0  # DO NOT CHANGE
         self.heuristicInfo = {}  # A dictionary for the heuristic to store information
-
-        # Group the food in circles
-        NUMBER_OF_CIRCLES = 4
         
-        foods = self.start[1].asList()
+        # IDEA DE LA HEURISTICA
+        # Dividir el tablero en cuadriculas de tamaño similar que no se solapen
+        # entre si. Cada cuadricula representa a un conjunto de pastillas.
+        # La heuristica consiste en el camino mas corto que visita todas las
+        # cuadriculas mas el numero de pastillas restantes en el tablero
+
+        # Divido el tablero en sectores que no se solapan
+        # SEGMENTS indica la cantidad de cuadriculas en las que se divide el
+        # tablero
+        # A mas segmentos la heuristica es mas precisa pero tambien es mas lenta
+        SEGMENTS = 32
+
+        # SEGMENTS DEBE SER UNA POTENCIA DE 2
+        assert SEGMENTS & (SEGMENTS - 1) == 0, "SEGMENTS debe ser una potencia de 2"
         
-        circle_size = len(foods) // NUMBER_OF_CIRCLES
-        foodCircles = []
-        foodsPerCircle = []
+        segments = makeSegments(0,0,self.walls.width, self.walls.height, SEGMENTS)
+        
+        self.heuristicInfo["segments"] = segments
 
-        # The circles completely covers their corresponding food, but its
-        # not necesarily the smallest circle that covers all the food
-        for i in range(NUMBER_OF_CIRCLES):
-            p = foods.pop()
-            foodsInCircle = [p]
-            if i == NUMBER_OF_CIRCLES-1:
-                # The last circle can be greater than the others
-                circle_size = len(foods)
-            while len(foodsInCircle) < circle_size:
-                p = findClosest(p, foods, manhattanDistance)[0]
-                foods.remove(p)
-                foodsInCircle.append(p)
-
-            foodCircles.append(minimumBoundingBox(foodsInCircle))        
-            foodsPerCircle.append(set(foodsInCircle))
-
-
-        self.heuristicInfo['foodCircles'] = foodCircles
-        self.heuristicInfo['foodsPerCircle'] = foodsPerCircle
-
+        
     def getStartState(self):
         return self.start
 
@@ -540,6 +542,7 @@ class FoodSearchProblem:
         "Returns successor states, the actions they require, and a cost of 1."
         successors = []
         self._expanded += 1  # DO NOT CHANGE
+        
         for direction in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
             x, y = state[0]
             dx, dy = Actions.directionToVector(direction)
@@ -564,19 +567,6 @@ class FoodSearchProblem:
             cost += 1
         return cost
 
-def minimumBoundingBox(points):
-    """
-    Returns the minimum bounding box that covers all the points
-    """
-    minX = min([p[0] for p in points])
-    maxX = max([p[0] for p in points])
-    minY = min([p[1] for p in points])
-    maxY = max([p[1] for p in points])
-
-    center = ((minX + maxX) // 2, (minY + maxY) // 2)
-    radius = max(center[0] - minX, maxX - center[0])+max(center[1] - minY, maxY - center[1])
-    return (center, radius)
-
 class AStarFoodSearchAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"
 
@@ -587,24 +577,76 @@ class AStarFoodSearchAgent(SearchAgent):
 
 class FoodSearchAgent(SearchAgent):
     """
-    A SearchAgent for FoodSearchProblem using bfs
+    Un SearchAgent para FoodSearchProblem que usa bfs
     """
 
     def __init__(self):
         self.searchFunction = search.breadthFirstSearch
         self.searchType = FoodSearchProblem
 
+from functools import cache
 
-def findBestPath(p, circles):
-    if len(circles) == 0:
+# cache memoriza los resultados de la funcion findBestPath para evitar
+# que se recalcule el mismo resultado varias veces
+#
+# Esto acelera la velocidad de la funcion pero incremente mucho la memoria
+# ejecutada 
+@cache
+def findBestPath(p, segments):
+    if len(segments) == 0:
         return 0
     
     mini = float('inf')
-    for circle in circles:
-        circopy = circles.copy()
-        circopy.remove(circle)
-        mini = min(mini, manhattanCircleDistance(p,*circle)+findBestPath(circle[0],circopy))
+    for segment in segments:
+        scopy = segments - {segment}
+        mini = min(mini, segmentDistance(p, *segment) + findBestPath( \
+            segmentClosest(p, *segment), scopy))
     return mini
+
+def segmentClosest(p, x0,y0,xf,yf):
+    """
+    Retorna el punto mas cercano al segmento definido por los puntos (x0,y0)
+    y (xf,yf) desde el punto p
+    """
+    if x0 <= p[0] <= xf:
+        xclosest = p[0]
+    elif p[0] <= x0:
+        xclosest = x0
+    else:
+        xclosest = xf
+
+    if y0 <= p[1] <= yf:
+        yclosest = p[1]
+    elif p[1] <= y0:
+        yclosest = y0
+    else:
+        yclosest = yf
+
+    return (xclosest, yclosest)
+
+def withinSegment(p,x0,y0,xf,yf):
+    """
+    Retorna True si el punto p esta dentro del segmento definido por los
+    puntos (x0,y0) y (xf,yf)
+    """
+    return (x0 <= p[0] <= xf) and (y0 <= p[1] <= yf)
+
+def segmentDistance(p, x0,y0,xf,yf):
+    """
+    Retorna la distancia entre el punto p y el segmento definido por los
+    puntos (x0,y0) y (xf,yf)
+    """
+    if x0 <= p[0] <= xf:
+        xdistance = 0
+    else:
+        xdistance = min(abs(p[0]-x0), abs(p[0]-xf))
+    
+    if y0 <= p[1] <= yf:
+        ydistance = 0
+    else:
+        ydistance = min(abs(p[1]-y0), abs(p[1]-yf))
+    
+    return xdistance + ydistance
 
 def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     """
@@ -632,23 +674,23 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     position, foodGrid = state
     "*** YOUR CODE HERE ***"
     
-    circles = problem.heuristicInfo["foodCircles"]
-    foodsPerCircle = problem.heuristicInfo["foodsPerCircle"]
+    segments = problem.heuristicInfo["segments"]
 
-    # remove circles that have no food
-    circlesWithFood = set()
+    foods = foodGrid.asList()
 
-    for food in foodGrid.asList():
-        if(len(circlesWithFood) == len(circles)):
+    # Obtengo los segmentos que tienen pastillas
+    segmentsWithFood = set()
+    for food in foods:
+        if len(segmentsWithFood) == len(segments):
             break
-        for circleIndex in range(len(circles)):
-            if food in foodsPerCircle[circleIndex]:
-                circlesWithFood.add(circleIndex)
+        for segment in segments:
+            if withinSegment(food, *segment):
+                segmentsWithFood.add(segment)
                 break
-    
-    ccc = [circles[i] for i in circlesWithFood]
 
-    return findBestPath(position, ccc) + len(foodGrid.asList())
+    # frozenset es requerido ya que los argumentos de findBestPath deben ser
+    # hasheables para poder ser cacheados
+    return findBestPath(position, frozenset(segmentsWithFood)) + len(foodGrid.asList())
     
 
 class ClosestDotSearchAgent(SearchAgent):

@@ -218,7 +218,7 @@ def nullHeuristic(state, problem=None) -> float:
     """
     return 0
 
-CHECK_HEURISTIC_CONSISTENCY = False
+CHECK_HEURISTIC_CONSISTENCY = True
 
 def aStarSearch(
         problem: SearchProblem, heuristic=nullHeuristic) -> List[Directions]:
@@ -232,8 +232,8 @@ def aStarSearch(
             if h0 > 1 + h1:
                 print("Heuristica no consistente!")
                 print("Para los estados, ",x[0], " y ", x[1])
-                print(h0, ">", "1+", h1)
-                #assert(False)
+                print(h0, ">", "1 +", h1)
+                #exit(1)
         return x[3] + heuristic(x[0], problem)
     
     def AStarPriorityQueue():
