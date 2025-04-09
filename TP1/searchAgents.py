@@ -483,12 +483,18 @@ def makeSegments(x0, y0, xf, yf, segments, partitionHeight=False):
     # de altura igual, si no, se parte en segmentos de ancho igual
     if partitionHeight:
         middle = (y0 + yf) // 2
+        if(middle == y0):
+            # El rectangulo es muy pequeño
+            raise Exception("El rectangulo es muy pequeño")
         # Las mitades restantes se dividen en segmentos de igual ancho
         s1 = makeSegments(x0, y0, xf, middle, segments // 2, not partitionHeight)
         s2 = makeSegments(x0, middle+1, xf, yf, segments // 2, not partitionHeight)
     else:
         # Se parte el tablero en segmentos de igual ancho
         middle = (x0 + xf) // 2
+        if(middle == x0):
+            # El rectangulo es muy pequeño
+            raise Exception("El rectangulo es muy pequeño")
         # Las mitades restantes se dividen en segmentos de igual altura
         s1 = makeSegments(x0, y0, middle, yf, segments // 2, not partitionHeight)
         s2 = makeSegments(middle+1, y0, xf, yf, segments // 2, not partitionHeight)
@@ -522,13 +528,23 @@ class FoodSearchProblem:
         # SEGMENTS indica la cantidad de cuadriculas en las que se divide el
         # tablero
         # A mas segmentos la heuristica es mas precisa pero tambien es mas lenta
-        SEGMENTS = 32
+        # y consume mas memoria
+        SEGMENTS = 8
 
         # SEGMENTS DEBE SER UNA POTENCIA DE 2
         assert SEGMENTS & (SEGMENTS - 1) == 0, "SEGMENTS debe ser una potencia de 2"
         
-        segments = makeSegments(0,0,self.walls.width, self.walls.height, SEGMENTS)
-        
+        mazeDivided = False
+        while(not mazeDivided):
+            try:
+                segments = makeSegments(0,0,self.walls.width, self.walls.height, SEGMENTS)
+            except:
+                SEGMENTS = SEGMENTS // 2
+            else:
+                mazeDivided = True
+
+        print("Maze divided in", SEGMENTS, "segments")
+
         self.heuristicInfo["segments"] = segments
 
         
