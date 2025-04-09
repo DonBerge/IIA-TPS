@@ -561,6 +561,39 @@ class PacmanGraphics:
         x, y = cell
         remove_from_screen(capsuleImages[(x, y)])
 
+    def drawSegments(self, segments):
+        colors = [
+                formatColor(1.0, 0.0, 0.0),  # Red
+                formatColor(0.0, 1.0, 0.0),  # Green
+                formatColor(0.5, 0.0, 0.5),  # Purple
+                formatColor(1.0, 0.5, 0.0),  # Orange
+                formatColor(0.0, 1.0, 1.0),  # Cyan
+                formatColor(1.0, 0.0, 1.0),  # Magenta
+                formatColor(0.5, 0.5, 0.5),  # Gray
+                formatColor(0.5, 0.25, 0.0), # Brown
+                formatColor(0.0, 0.5, 0.5),  # Teal
+                formatColor(0.5, 0.5, 0.0),  # Olive
+                formatColor(0.75, 0.0, 0.25),# Maroon
+                formatColor(0.0, 0.75, 0.25),# Lime Green
+                formatColor(0.25, 0.25, 0.75),# Indigo
+                formatColor(0.75, 0.75, 0.75),# Light Gray
+                formatColor(0.25, 0.0, 0.5),   # Dark Purple
+                formatColor(0.0, 0.0, 1.0),  # Blue
+        ]
+
+        for i, segment in enumerate(segments):
+            if i > len(colors):
+                break
+            for x in range(segment[0], segment[2]+1):
+                for y in range(segment[1], segment[3]+1):
+                    cellColor = colors[i]
+                    screenPos = self.to_screen( (x, y) )
+                    square(screenPos,
+                     0.5 * self.gridSize,
+                     color = cellColor,
+                     filled = 1, behind=2)
+        refresh()
+
     def drawExpandedCells(self, cells):
         """
         Draws an overlay of expanded grid positions for search agents

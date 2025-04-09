@@ -529,7 +529,7 @@ class FoodSearchProblem:
         # tablero
         # A mas segmentos la heuristica es mas precisa pero tambien es mas lenta
         # y consume mas memoria
-        SEGMENTS = 8
+        SEGMENTS = 16
 
         # SEGMENTS DEBE SER UNA POTENCIA DE 2
         assert SEGMENTS & (SEGMENTS - 1) == 0, "SEGMENTS debe ser una potencia de 2"
@@ -543,8 +543,14 @@ class FoodSearchProblem:
             else:
                 mazeDivided = True
 
-        print("Maze divided in", SEGMENTS, "segments")
+        # Solo dejo los segmentos que tienen pastillas
+        segments = filterSegmentsWithFood(segments, startingGameState.getFood().asList())
 
+        print("Maze divided in", len(segments), "segments")
+
+        import __main__
+        __main__._display.drawSegments(segments)
+    
         self.heuristicInfo["segments"] = segments
 
         
@@ -664,6 +670,18 @@ def segmentDistance(p, x0,y0,xf,yf):
     
     return xdistance + ydistance
 
+def filterSegmentsWithFood(segments, foods):
+    # Obtengo los segmentos que tienen pastillas
+    segmentsWithFood = set()
+    for food in foods:
+        if len(segmentsWithFood) == len(segments):
+            break
+        for segment in segments:
+            if withinSegment(food, *segment):
+                segmentsWithFood.add(segment)
+                break
+    return segmentsWithFood
+
 def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     """
     Your heuristic for the FoodSearchProblem goes here.
@@ -695,18 +713,11 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
     foods = foodGrid.asList()
 
     # Obtengo los segmentos que tienen pastillas
-    segmentsWithFood = set()
-    for food in foods:
-        if len(segmentsWithFood) == len(segments):
-            break
-        for segment in segments:
-            if withinSegment(food, *segment):
-                segmentsWithFood.add(segment)
-                break
+    segmentsWithFood = filterSegmentsWithFood(segments, foods)
 
     # frozenset es requerido ya que los argumentos de findBestPath deben ser
     # hasheables para poder ser cacheados
-    return findBestPath(position, frozenset(segmentsWithFood)) + len(foodGrid.asList())
+    return max(findBestPath(position, frozenset(segmentsWithFood)), len(foods))
     
 
 class ClosestDotSearchAgent(SearchAgent):
