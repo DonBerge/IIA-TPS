@@ -739,9 +739,8 @@ def foodHeuristic(state: Tuple[Tuple, List[List]], problem: FoodSearchProblem):
 
     # frozenset es requerido ya que los argumentos de findBestPath deben ser
     # hasheables para poder ser cacheados
-    a = findBestPath(position, frozenset(segmentsWithFood)) + len(segmentsWithFood)
-    print(a)
-    exit(1)
+    return findBestPath(position, frozenset(segmentsWithFood))
+    
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
