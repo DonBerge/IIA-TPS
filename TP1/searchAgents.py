@@ -567,11 +567,6 @@ class FoodSearchProblem:
         segments = set(restrainSegment(segment, foods) for segment in segments) 
         # Descarta los segmentos sin pastillas     
         segments.discard(None)
-        
-        print("Maze divided in", len(segments), "segments")
-
-        import __main__
-        __main__._display.drawSegments(segments)
     
         self.heuristicInfo["segments"] = segments
 

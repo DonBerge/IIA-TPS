@@ -225,15 +225,6 @@ def aStarSearch(
     """Search the node that has the lowest combined cost and heuristic first."""
     
     def fun(x):
-        # verificar consistencia
-        if CHECK_HEURISTIC_CONSISTENCY and x[1] is not None:
-            hnprima = heuristic(x[0], problem)
-            hn = heuristic(x[1], problem)
-            if not (hn <= 1 + hnprima):
-                print("Heuristica no consistente!")
-                print("Para los estados, ",x[0], " y ", x[1])
-                print(hn, ">", "1 +", hnprima)
-                #exit(1)
         return x[3] + heuristic(x[0], problem)
     
     def AStarPriorityQueue():
