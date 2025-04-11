@@ -196,97 +196,115 @@ entre todas las componentes de la cuádrupla.\\
 
 \subsection{Posibles heurísticas}
 Para el tema de las heurística se pensaron unas cuantas, y para ver si es admisible hay que 
-tener en cuenta que la heurística no debe sobrestimar. La primera que se pensó fue
-\begin{center}
-    Distancia de manhattan a la esquina no visitada mas cercana\\ 
-    
-    +\\ 
-    
-    Distancia de manhattan a la esquina no visitada mas cercana a la encontrada anteriormente 
-\end{center}
+tener en cuenta que la heurística no debe sobrestimar. La primera que se pensó fue una estilo greedy.
 
-De esta forma se disminuye considerablemente los nodos explorados 
-pero tiene un problema, no es consistente, pero podría ser admisible por estar usando la 
-distancia de manhattan.\\
+\ 
 
-La siguiente forma fue considerar la cantidad de esquinas no visitadas.
- Esta es aparentemente consistente, por lo que es admisible. Pero con la desventaja de que 
- la cantidad de nodos explorados es alta.\\ 
+\noindent Punto-actual $\leftarrow$ Posicion-inicial\\
+\noindent  Distancia $\leftarrow$ 0\\
 
-Otra que se pensó fue, distancia de manhattan a la esquina no visitada mas cercan. 
-Esta expande mas nodos, pero resulto ser inconsistente. Aunque podria llegar al ser consistente por la 
-distancia de manhattan.\\
+\noindent bucle hacer\\
+\indent si Lista-Esquinas está vacía contestar \textbf{Distancia}\\
+\indent tomo ESQUINA de Lista-Esquinas-No-Visitadas\\
+\indent Distancia $\leftarrow$ Distancia + distanciaManhattan(Punto-actual, ESQUINA)\\
+\noindent FIN\\
 
-También se pendo reutilizar el primer método pero modificandolo para volverlo consistente y 
-por consecuente que sea admisible, surgiendo:
-\begin{itemize}
-    \item {Esta vez usando la distancia euclidea. Se obtiene un resultados similares,
-            sigue sin ser consistente pero la diferencia entre h(n) y c(n,n')+h(n') es cada vez menor.
-            Peor aun, por la forma en la que se mueve el pacaman (arriba, abajo, izquierda, derecha) 
-            no seria admisible.}
-    \item {Usar la norma infinito: De esta forma seria consistente, por lo que es admisible. 
-            Pero expande muchísimos menos nodos.}
-\end{itemize}
+Es decir, se calcula la distancia de manhattan entre el punto actual y la esquina
+mas cercana, y se suma a la distancia total. Luego se repite el proceso hasta que no haya mas esquinas.
+Esta heuristica es valida pero puede elegir rutas no optimas en ciertas situaciones(por ejemplo, en un escenario
+donde no hay paredes), por lo que no es admisible.\\
 
-\noindent La ultima heurística que pensamos fue:
-\begin{center}
-    Revisar todos los ordenes posibles para visitar las esquinas 
-    y calcular el menor recorrido total entre todos los ordenes. 
-\end{center}
+La siguiente forma fue considerar la cantidad de esquinas no visitadas. Esta heuristica es consistente, ya que
+la cantidad de esquinas no visitadas en cada paso disminuye en como mucho una unidad, por lo tanto es admisible.
+Sin embargo la estimacion del costo a la solucion es demasiado optimista, por lo que la cantidad de nodos expandidos
+disminuye muy poco.\\
 
-Puede sonar prohibitivamente lento (de hecho, la complejidad es O(n!) por cada calculo de la heurística), 
-pero como solo son 4 pastillas hay que revisar como mucho 4! = 24 posibles ordenes. Se pueden precomputar 
-algunos resultados para bajar la complejidad a O(1). 
-Es aparentemente admisible y consistente, y ademas disminuye muchísimo la cantidad de nodos explorados, 
-(menos de 800 nodos explorados en mediumCorners (expande 741 nodos)).
+Tambien se intento repetir la primera heuristica pero usando la distancia euclidea y la distancia con la norma
+infinito. En algunos laberintos no se cumplio la propiedad de consistencia usando la distancia euclidea pero si
+se mantuvo usando la distancia con norma infinito. Sin embargo es posible que haya algunos layouts donde existan
+un par de estados donde la propiedad de consistencia se rompa, por lo que descartamos esta heuristica.\\
+
+La ultima heurística que pensamos fue, a partir de la posición actual, revisar todas las formas posibles
+de visitar las esquinas, calcular la distancia recorrida total de cada recorrido(usando distancia de manhattan) y devolver la menor de todas
+ellas.
+
+Para una posición inicial S solamente hay que visitar 4 esquinas, por lo que solo hay que revisar 4! = 24 posibles
+ordenes. Además, se pueden memorizar algunos resultados para mejorar la velocidad de computo de la heuristica(aunque
+esto tambien gasta más memoria). Esta heuristica es la resolución de una restrición del problema a cuando no hay
+paredes en el laberinto, asi que es esperable que sea consistente y de hecho lo es. La heuristica es consistente ya que en cada paso la 
+distancia a la solución varia en a lo sumo 1 paso, dado que el costo de ir de un nodo a otro es de 1, la heuristica cumple la propiedad de
+consistencia. Además disminuye mucho la cantidad de nodos explorados (741 nodos para la solución optima vs 1966 nodos
+usando busqueda de costo uniforme).
 
 \section{Ejercicio 6}
-La heurística elegida para el es aquella que corresponde a la
-resolución del problema de comer las pastillas en las esquinas cuando no hay
-paredes en el laberinto.\\
+La heurística no trivial consistente elegida para resolver el problema de comer todas las pasitllas en las esquinas
+es equivalente a aquella que revisa todos los ordenes para visitar las esquinas y elige el menor, solo que es mas eficiente
+ya que evita revisar algunos recorridos no optimos.\\
 
-$h(n)= \text{numero minimo de pasos para alcanzar las 4 esquinas si no hay paredes}$\\
+Resulta que la primera heuristica que siempre intenta visitar la esquina mas cercana obtiene la respuesta optima
+a visitar las esquinas de un tablero sin paredes cuando la casilla de partida es una de las esquinas. Vimos que esto es asi
+analizando el escenario de un laberinto sin paredes donde hay que visitar 3, 2 o 1 esquina.\\
 
-La heurística es admisible, ya que el numero de pasos para obtener las pastillas
-en un laberinto vació no puede disminuir si se colocan paredes, por lo que la
-heurística no sobrestima el costo de la solución.\\
+Si $S$ es la posición incial y $A,B,C \text{ y } D$ son las esquinas entonces los recorridos posibles entran en alguno de estos 4 esquemas:
 
-\noindent Veamos como seria el caso general\\
+\begin{itemize}
+    \item $S\rightarrow A \rightarrow \dots$
+    \item $S\rightarrow B \rightarrow \dots$
+    \item $S\rightarrow C \rightarrow \dots$
+    \item $S\rightarrow D \rightarrow \dots$
+\end{itemize}
 
-Este algoritmo para encontrar la distancia puede usarse para resolver el caso
-donde la posición inicial S no esta en las esquinas.
+Los subrecorridos que siguen desde las esquinas $A,B,C \text{ y } D$ pueden resolverse optimamente usando la primera heuristica, por lo que
+solo hay que revisar cuatro recorridos posibles.\\
 
-\begin{verbatim}
-        +-------------------+
-        |A                 B|
-        |                   |
-        |         S         |
-        |                   |
-        |C                 D|
-        +-------------------+
-\end{verbatim}
+Asi que la heuristica final consiste en el siguiente algoritmo:\\
 
+\noindent  Distancia $\leftarrow$ $\infty$\\
 
-En este caso cualquier ruta de menor coste tiene que empezar por alguno de los
-siguieres casos:
-\begin{enumerate}
-    \item {S $\rightarrow$ A $\rightarrow$ ...}
-    \item {S $\rightarrow$ B $\rightarrow$ ...}
-    \item {S $\rightarrow$ C $\rightarrow$ ...}
-    \item {S $\rightarrow$ D $\rightarrow$ ...}
-\end{enumerate}
+\noindent PARA Esquina EN Lista-Esquinas-No-Visitadas\\
+\indent Lista' $\leftarrow$ Lista-Esquinas\\
+\indent ELIMINAR Esquina de Lista'\\
+\indent Distancia $\leftarrow$ MINIMO(Distancia, distanciaManhattan(Posicion-Actual, Esquina) + busquedaGreedy(Lista'))\\
+\noindent FIN\\
 
-Todos los casos continúan en un escenario donde hay que llegar desde una esquina
-del tablero a todas las demás, por lo que se puede usar el algoritmo greedy 
-para resolver estos casos.\\
+Donde busquedaGreedy es la heuristica que siempre busca visitar la esquina mas cercana, calculando distanacias usando
+la distancia de manhattan.
 
-Asi, un candidato a solución puede obtenerse calculando la distancia desde el punto
-inicial S a todas las esquinas y luego calcular la distancia faltante usando
-el algoritmo greedy. La solución del problema general consiste en el mínimo de
-todos los candidatos a solución(que son 4, por lo que computar la solución no
-es muy costoso).
 
 \section{Ejercicio 7}
 
+La heurística elegida para ejercicio 7 consiste en dividir el tablero en cuadriculas no superponibles(en el 
+código son 16 cuadriculas, pero puede ser cualquier potencia de 2). En esta division posiblemente halla 
+cuadriculas que no tengan pastillas y otras que si. A la hora de calcular la heurística, se calcula el largo 
+del mínimo camino que visita todas las cuadriculas que tienen pastillas.\\
+
+Esta heurística surgió de la idea de generalizar el problema de visitar las 4 esquinas del tablero al problema
+de comer todas las pastillas. En este caso cada cuadricula representa una "esquina" a visitar, solo que las 
+cuadriculas ocupan mas espacio.\\
+
+Para mejorar la heurística, se restringe el tamaño de las cuadriculas para que haya al menos dos esquinas 
+opuestas que tengan pastillas. Además algunos resultados pueden calcularse más de una vez por lo que se 
+memorizan los resultados y calculados para mejorar la velocidad de computo(a costa de usar mas memoria). 
+La heurística se acerca mas a la solución real a medida que se aumentan las cuadriculas, pero también aumenta
+el tiempo de computo y la memoria utilizada.\\
+
+\newpage
+
+Por ejemplo para el layout trickySearch, el laberinto se divide en 16 cuadriculas.\\
+
+\includegraphics[width=.8\textwidth]{Imagenes/Captura desde 2025-04-09 20-07-23.png}\\
+
+Si se eliminan las cuadriculas sin pastillas y se restringe el tamaño de las cuadriculas restantes, entonces solo quedan 4 cuadriculas.\\
+
+\includegraphics[width=.8\textwidth]{Imagenes/image.png}\\
+
+El mínimo camino que visita todas las cuadriculas consta de 17 pasos, mientras
+que el costo real de comer todas las pastillas es de 60 pasos. Usando esta
+heurística el agente encuentra la solución en aproximadamente 0.8 segundos
+explorando 9086 nodos.\\
+
+La heurística es admisible porque un recorrido que tiene que comer todas las
+pastillas como mínimo tiene que visitar todas las cuadriculas(y siempre donde
+hay una cuadricula hay por lo menos 1 pastilla). Además es consistente porque en cada paso la distancia a la solución varia en solo 1 paso.\\
 
 \end{document}
