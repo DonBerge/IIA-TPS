@@ -29,6 +29,9 @@
 
 \usepackage{fancyhdr} % Para personalizar encabezados y pies de página
 
+\usepackage{caption}
+\usepackage{subcaption}
+
 
 \title{Introducción a la Inteligencia Artificial \\
 Trabajo Práctico 1: Representación y Búsqueda en Espacio de Estados }
@@ -208,7 +211,7 @@ el laberinto \textbf{openMaze}. El recorrido que hacen es el siguiente:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.8\textwidth]{Imagenes/caminos.png}
+    \includegraphics[width=.6\textwidth]{Imagenes/caminos.png}
     \caption{En naranja el camino del DFS, En rojo el camino del resto}
 \end{figure}
 
@@ -274,41 +277,41 @@ tener en cuenta que la heurística no debe sobrestimar. La primera que se pensó
 
 Es decir, se calcula la distancia de manhattan entre el punto actual y la esquina
 mas cercana, y se suma a la distancia total. Luego se repite el proceso hasta que no haya mas esquinas.
-Esta heuristica es valida pero puede elegir rutas no optimas en ciertas situaciones(por ejemplo, en un escenario
+Esta heurística es valida pero puede elegir rutas no optimas en ciertas situaciones(por ejemplo, en un escenario
 donde no hay paredes), por lo que no es admisible.\\
 
-La siguiente forma fue considerar la cantidad de esquinas no visitadas. Esta heuristica es consistente, ya que
+La siguiente forma fue considerar la cantidad de esquinas no visitadas. Esta heurística es consistente, ya que
 la cantidad de esquinas no visitadas en cada paso disminuye en como mucho una unidad, por lo tanto es admisible.
-Sin embargo la estimacion del costo a la solucion es demasiado optimista, por lo que la cantidad de nodos expandidos
+Sin embargo la estimación del costo a la solución es demasiado optimista, por lo que la cantidad de nodos expandidos
 disminuye muy poco.\\
 
-Tambien se intento repetir la primera heuristica pero usando la distancia euclidea y la distancia con la norma
-infinito. En algunos laberintos no se cumplio la propiedad de consistencia usando la distancia euclidea pero si
+También se intento repetir la primera heurística pero usando la distancia euclidea y la distancia con la norma
+infinito. En algunos laberintos no se cumplió la propiedad de consistencia usando la distancia euclidea pero si
 se mantuvo usando la distancia con norma infinito. Sin embargo es posible que haya algunos layouts donde existan
-un par de estados donde la propiedad de consistencia se rompa, por lo que descartamos esta heuristica.\\
+un par de estados donde la propiedad de consistencia se rompa, por lo que descartamos esta heurística.\\
 
 La ultima heurística que pensamos fue, a partir de la posición actual, revisar todas las formas posibles
-de visitar las esquinas, calcular la distancia recorrida total de cada recorrido(usando distancia de manhattan) y devolver la menor de todas
+de visitar las esquinas, calcular la distancia recorrida total de cada recorrido (usando distancia de manhattan) y devolver la menor de todas
 ellas.
 
 Para una posición inicial S solamente hay que visitar 4 esquinas, por lo que solo hay que revisar 4! = 24 posibles
-ordenes. Además, se pueden memorizar algunos resultados para mejorar la velocidad de computo de la heuristica(aunque
-esto tambien gasta más memoria). Esta heuristica es la resolución de una restrición del problema a cuando no hay
-paredes en el laberinto, asi que es esperable que sea consistente y de hecho lo es. La heuristica es consistente ya que en cada paso la 
-distancia a la solución varia en a lo sumo 1 paso, dado que el costo de ir de un nodo a otro es de 1, la heuristica cumple la propiedad de
+ordenes. Además, se pueden memorizar algunos resultados para mejorar la velocidad de computo de la heurística (aunque
+esto también gasta más memoria). Esta heurística es la resolución de una restricción del problema a cuando no hay
+paredes en el laberinto, asi que es esperable que sea consistente y de hecho lo es. La heurística es consistente ya que en cada paso la 
+distancia a la solución varia en a lo sumo 1 paso, dado que el costo de ir de un nodo a otro es de 1, la heurística cumple la propiedad de
 consistencia. Además disminuye mucho la cantidad de nodos explorados (741 nodos para la solución optima vs 1966 nodos
-usando busqueda de costo uniforme).
+usando búsqueda de costo uniforme).
 
 \section{Ejercicio 6}
-La heurística no trivial consistente elegida para resolver el problema de comer todas las pasitllas en las esquinas
+La heurística no trivial consistente elegida para resolver el problema de comer todas las pastillas en las esquinas
 es equivalente a aquella que revisa todos los ordenes para visitar las esquinas y elige el menor, solo que es mas eficiente
-ya que evita revisar algunos recorridos no optimos.\\
+ya que evita revisar algunos recorridos no óptimos.\\
 
-Resulta que la primera heuristica que siempre intenta visitar la esquina mas cercana obtiene la respuesta optima
+Resulta que la primera heurística que siempre intenta visitar la esquina mas cercana obtiene la respuesta optima
 a visitar las esquinas de un tablero sin paredes cuando la casilla de partida es una de las esquinas. Vimos que esto es asi
 analizando el escenario de un laberinto sin paredes donde hay que visitar 3, 2 o 1 esquina.\\
 
-Si $S$ es la posición incial y $A,B,C \text{ y } D$ son las esquinas entonces los recorridos posibles entran en alguno de estos 4 esquemas:
+Si $S$ es la posición inicial y $A,B,C \text{ y } D$ son las esquinas entonces los recorridos posibles entran en alguno de estos 4 esquemas:
 
 \begin{itemize}
     \item $S\rightarrow A \rightarrow \dots$
@@ -317,10 +320,10 @@ Si $S$ es la posición incial y $A,B,C \text{ y } D$ son las esquinas entonces l
     \item $S\rightarrow D \rightarrow \dots$
 \end{itemize}
 
-Los subrecorridos que siguen desde las esquinas $A,B,C \text{ y } D$ pueden resolverse optimamente usando la primera heuristica, por lo que
+Los subrecorridos que siguen desde las esquinas $A,B,C \text{ y } D$ pueden resolverse optimamente usando la primera heurística, por lo que
 solo hay que revisar cuatro recorridos posibles.\\
 
-Asi que la heuristica final consiste en el siguiente algoritmo:\\
+Asi que la heurística final consiste en el siguiente algoritmo:\\
 
 \noindent  Distancia $\leftarrow$ $\infty$\\
 
@@ -330,19 +333,19 @@ Asi que la heuristica final consiste en el siguiente algoritmo:\\
 \indent Distancia $\leftarrow$ MINIMO(Distancia, distanciaManhattan(Posicion-Actual, Esquina) + busquedaGreedy(Lista'))\\
 \noindent FIN\\
 
-Donde busquedaGreedy es la heuristica que siempre busca visitar la esquina mas cercana, calculando distanacias usando
+Donde busquedaGreedy es la heurística que siempre busca visitar la esquina mas cercana, calculando distancias usando
 la distancia de manhattan.
 
 
 \section{Ejercicio 7}
 
-La heurística elegida para ejercicio 7 consiste en dividir el tablero en cuadriculas no superponibles(en el 
+La heurística elegida para ejercicio 7 consiste en dividir el tablero en cuadriculas no superponibles (en el 
 código son 16 cuadriculas, pero puede ser cualquier potencia de 2). En esta division posiblemente halla 
 cuadriculas que no tengan pastillas y otras que si. A la hora de calcular la heurística, se calcula el largo 
 del mínimo camino que visita todas las cuadriculas que tienen pastillas.\\
 
 Esta heurística surgió de la idea de generalizar el problema de visitar las 4 esquinas del tablero al problema
-de comer todas las pastillas. En este caso cada cuadricula representa una "esquina" a visitar, solo que las 
+de comer todas las pastillas. En este caso cada cuadricula representa una \say{esquina} a visitar, solo que las 
 cuadriculas ocupan mas espacio.\\
 
 Para mejorar la heurística, se restringe el tamaño de las cuadriculas para que haya al menos dos esquinas 
@@ -351,13 +354,22 @@ memorizan los resultados y calculados para mejorar la velocidad de computo(a cos
 La heurística se acerca mas a la solución real a medida que se aumentan las cuadriculas, pero también aumenta
 el tiempo de computo y la memoria utilizada.\\
 
-Por ejemplo para el layout trickySearch, el laberinto se divide en 16 cuadriculas.\\
+\begin{figure}[H]
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=.9\textwidth]{Imagenes/Captura desde 2025-04-09 20-07-23.png}
+    \caption{Por ejemplo, para el layout trickySearch, el laberinto se divide en 16 cuadriculas.}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=.9\textwidth]{Imagenes/image.png}
+    \caption{Si se eliminan las cuadriculas sin pastillas y se restringe el tamaño de las cuadriculas restantes, entonces solo quedan 4 cuadriculas.}
+    \end{subfigure}
+\end{figure}
 
-\includegraphics[width=.8\textwidth]{Imagenes/Captura desde 2025-04-09 20-07-23.png}\\
 
-Si se eliminan las cuadriculas sin pastillas y se restringe el tamaño de las cuadriculas restantes, entonces solo quedan 4 cuadriculas.\\
 
-\includegraphics[width=.8\textwidth]{Imagenes/image.png}\\
+%\includegraphics[width=.8\textwidth]{Imagenes/image.png}\\
 
 El mínimo camino que visita todas las cuadriculas consta de 17 pasos, mientras
 que el costo real de comer todas las pastillas es de 60 pasos. Usando esta
