@@ -199,10 +199,6 @@ def breadthFirstSearch(problem: SearchProblem) -> List[Directions]:
 
 def uniformCostSearch(problem: SearchProblem) -> List[Directions]:
     """Search the node of least total cost first."""
-    # Se asume que el costo de ruta sigue la propiedad asocitativa
-    # f: funcion de costo de ruta
-    # f(a,...,b,...c) = f(a,...b)+f(b,...c)
-    
     def UCSPriorityQueue():
         # Priority queue with the cost as the priority
         # The cost is the 4th element of the tuple
