@@ -474,8 +474,13 @@ class AStarCornersAgent(SearchAgent):
 
 ###
 
-# Divide un rectangulo definido por las esquinas
-# opuestas (x0,y0) y (xf,yf) en segmentos que no se solapan
+# Divide un rectangulo definido por la esquina
+# superior izquierda (x0,y0) y la esquina
+# inferior derecha (xf,yf) en cuadriculas que no se solapan
+# Cada cuadricula esta definida por una cuadrupla de 4 enteros
+# Donde los dos primeros valores son la coordenada de la esquina
+# superior izquierda y los dos ultimos la coordenada de la esquina
+# inferior derecha
 def makeSegments(x0, y0, xf, yf, segments, partitionHeight=False):
     if(segments == 1):
         return set([(x0, y0, xf, yf)])
@@ -562,10 +567,10 @@ class FoodSearchProblem:
             else:
                 mazeDivided = True
 
-        # Restrinjo las dimensiones de los segmentos para que no ocupen espacio
+        # Restrinjo las dimensiones de las cuadriculas para que no ocupen espacio
         # extra
         segments = set(restrainSegment(segment, foods) for segment in segments) 
-        # Descarta los segmentos sin pastillas     
+        # Descarta las cuadriculas sin pastillas     
         segments.discard(None)
     
         self.heuristicInfo["segments"] = segments
@@ -644,7 +649,7 @@ def findBestPath(p, segments):
 
 def segmentClosest(p, x0,y0,xf,yf):
     """
-    Retorna el punto mas cercano al segmento definido por los puntos (x0,y0)
+    Retorna el punto mas cercano a la cuadricula definido por los puntos (x0,y0)
     y (xf,yf) desde el punto p
     """
     if x0 <= p[0] <= xf:
@@ -665,14 +670,14 @@ def segmentClosest(p, x0,y0,xf,yf):
 
 def withinSegment(p,x0,y0,xf,yf):
     """
-    Retorna True si el punto p esta dentro del segmento definido por los
+    Retorna True si el punto p esta dentro de la cuadricula definido por los
     puntos (x0,y0) y (xf,yf)
     """
     return (x0 <= p[0] <= xf) and (y0 <= p[1] <= yf)
 
 def segmentDistance(p, x0,y0,xf,yf):
     """
-    Retorna la distancia entre el punto p y el segmento definido por los
+    Retorna la distancia entre el punto p y la cuadricula definido por los
     puntos (x0,y0) y (xf,yf)
     """
     if x0 <= p[0] <= xf:

@@ -218,8 +218,6 @@ def nullHeuristic(state, problem=None) -> float:
     """
     return 0
 
-CHECK_HEURISTIC_CONSISTENCY = True
-
 def aStarSearch(
         problem: SearchProblem, heuristic=nullHeuristic) -> List[Directions]:
     """Search the node that has the lowest combined cost and heuristic first."""
