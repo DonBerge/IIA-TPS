@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes/"
+     xml:base="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneChequeoTipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneChequeoTipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneTIpo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ChequeoTipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneDeclaracionTipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneDeclaracionTipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneTIpo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#DeclaracionTipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneSeguridadTipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneSeguridadTipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneTIpo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SeguridadTipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneTIpo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneTIpo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SistemaTipos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ARM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ARM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Assembler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Assembler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Assembler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Automatico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Automatico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#GestionMemoria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Compilado"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Manual"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneChequeoTipo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Estatico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneDeclaracionTipo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Explicito"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Imperativo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneSeguridadTipo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Debil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#CSharp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#CSharp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ChequeoTipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ChequeoTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SistemaTipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Compilado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Compilado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#FormaEjecucion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Concurrente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Concurrente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Debil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Debil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SeguridadTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#DeclaracionTipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#DeclaracionTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SistemaTipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Declarativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Declarativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Dinamico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Dinamico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ChequeoTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Erlang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Erlang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Estatico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Estatico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ChequeoTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Explicito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Explicito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#DeclaracionTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#FormaEjecucion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#FormaEjecucion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Fuerte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Fuerte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SeguridadTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#GestionMemoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#GestionMemoria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Haskell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Haskell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Imperativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Imperativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Implicito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Implicito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#DeclaracionTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Interpretado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Interpretado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#FormaEjecucion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Javascript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Javascript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Typescript"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#MIPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#MIPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Assembler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#ML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Manual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Manual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#GestionMemoria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#NivelAbstraccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#NivelAbstraccion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Alto"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Bajo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Medio"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Python -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Python">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Racket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Racket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Scratch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Scratch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SeguridadTipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SeguridadTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SistemaTipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SistemaTipos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#SistemaTipos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Typescript -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Typescript">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Conocidos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#VIsual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#VIsual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#x86 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#x86">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Assembler"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Alto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Alto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Bajo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Bajo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Medio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Medio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#NivelAbstraccion"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
