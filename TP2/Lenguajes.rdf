@@ -23,13 +23,19 @@
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#FormaEjecucion"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#GestionMemoria"/>
+    </owl:ObjectProperty>
     
 
 
@@ -53,7 +59,10 @@
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguajes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Paradigma"/>
+    </owl:ObjectProperty>
     
 
 
@@ -452,6 +461,30 @@
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Bajo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Bajo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C99 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C99">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#C"/>
+    </owl:NamedIndividual>
     
 
 
