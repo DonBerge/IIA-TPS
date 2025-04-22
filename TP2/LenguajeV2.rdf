@@ -208,30 +208,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Lenguaje"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Compilado"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Manual"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneChequeoTipo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Estatico"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneDeclaracionTipo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Explicito"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneNivelAbstraccion"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Bajo"/>
             </owl:Restriction>
@@ -244,14 +220,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Imperativo"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaEjecucion"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Compilado"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneSeguridadTipo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Debil"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#formaGestion"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Manual"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneChequeoTipo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Estatico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneDeclaracionTipo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Explicito"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -265,6 +253,18 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneParadigma"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Imperativo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#tieneSeguridadTipo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes#Debil"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
