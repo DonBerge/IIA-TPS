@@ -129,7 +129,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#tieneNivelAbtraccion">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
     </owl:ObjectProperty>
     
 
@@ -177,6 +176,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Caracteristicas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Caracteristicas"/>
+    
+
+
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#ChequeoTipo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#ChequeoTipo">
@@ -195,13 +200,17 @@
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#FormaEjecucion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#FormaEjecucion"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#FormaEjecucion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Caracteristicas"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Caracteristicas"/>
+    </owl:Class>
     
 
 
@@ -244,25 +253,15 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#tieneNivelAbtraccion"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
     
 
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Paradigma -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Paradigma"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Paradigma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Caracteristicas"/>
+    </owl:Class>
     
 
 
@@ -282,7 +281,9 @@
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#SistemaTipo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#SistemaTipo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#SistemaTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Caracteristicas"/>
+    </owl:Class>
     
 
 
@@ -299,9 +300,7 @@
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Alto -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Alto">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Alto"/>
     
 
 
@@ -315,19 +314,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Automatica -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Automatica">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Bajo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Bajo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Bajo"/>
     
 
 
@@ -347,10 +336,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#COBOL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#COBOL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#CSharp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#CSharp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#FormaEjecucion"/>
+        <untitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#COBOL"/>
+        <untitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#CSharp"/>
+        <untitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fortran"/>
+        <untitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Java"/>
+        <untitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Racket"/>
     </owl:NamedIndividual>
     
 
@@ -387,6 +410,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Erlang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Erlang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Dinamico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Declarativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico">
@@ -403,10 +441,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fortran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fortran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#SeguridadTipo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Paradigma"/>
     </owl:NamedIndividual>
     
 
@@ -420,10 +480,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Go -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Go">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Haskell -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Haskell">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Declarativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Visual"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -448,6 +532,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Interpretado">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#FormaEjecucion"/>
+        <untitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#R"/>
     </owl:NamedIndividual>
     
 
@@ -456,6 +541,44 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Java">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Javascript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Javascript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Dinamico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Interpretado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Debil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Kotlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Kotlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -464,15 +587,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Manual">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#COBOL"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fortran"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Pascal"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Rust"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#C++"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Medio -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Medio">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Medio"/>
     
 
 
@@ -488,6 +614,135 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Netflix">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Programas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Paradigma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#PHP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#PHP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Dinamico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Interpretado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Debil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Pascal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Pascal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Debil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Python">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Dinamico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Interpretado"/>
+        <untitled-ontology-33:tieneGestionMemoria rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Recolector_de_basura"/>
+        <untitled-ontology-33:tieneNivelAbtraccion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Alto"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#R -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#R">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Dinamico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Racket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Racket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Recolector_de_basura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Recolector_de_basura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#CSharp"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Erlang"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Go"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Haskell"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Java"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Javascript"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Kotlin"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#PHP"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Python"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Racket"/>
+        <untitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Ruby"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Ruby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Ruby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Dinamico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Interpretado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Rust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Rust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Compilado"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -524,6 +779,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#C++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#C++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
+        <untitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Estatico"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Explicito"/>
+        <untitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Implicito"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Concurrente"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Funcional"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Imperativo"/>
+        <untitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Orientado_a_Objetos"/>
+        <untitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Fuerte"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -538,17 +809,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#ChequeoTipo"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#DeclaracionTipo"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#SeguridadTipo"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#FormaEjecucion"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#GestionMemoria"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Lenguaje"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#NivelAbstraccion"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#Paradigma"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#SistemaTipo"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
