@@ -62,14 +62,12 @@ vimos en clase, el cual consiste en lo siguientes pasos:
            consultas da solución. Nosotros propusimos las siguientes:
            \begin{itemize}
                 \item {\say{¿Qué lenguajes funcionales tienen tipado estático y fuerte?}}
-                % Berge esta lo de tipa estico y fuerte?
                 \item {\say{¿Qué lenguajes tienen recolector de basura?}}
                 \item {\say{¿Qué lenguajes son multiparadigmas?}} 
-                \item {\say{¿Qué lenguajes son aptos para sistemas distribuidos?}}
-                % Berge, al final esta pregunta la cambiamos por otra? (no mencionamos sistemas distribuidos) 
+                \item {\say{¿Qué lenguajes son aptos para programar de forma concurrente?}}
            \end{itemize}}
     \item {\textbf{Analizar Reuso}\\
-           Para poder facilitar la creación de mas clases y/o tener mas 
+           Para poder facilitar la creación de más clases y/o tener mas 
            idea de que características usar en la ontología, una 
            forma seria viendo otras ontología ya creadas. \\
 
@@ -95,6 +93,7 @@ vimos en clase, el cual consiste en lo siguientes pasos:
     \item {\textbf{Definición de clases y jerarquía}\\
            Para poder definir las clases nos guiamos por la idea de que 
            una clase es una colección de elementos con propiedades 
+
            similares (Ejemplos de clases en esta ontología serian los 
            Lenguajes y Programas).\\
 
@@ -109,6 +108,14 @@ vimos en clase, el cual consiste en lo siguientes pasos:
            \begin{enumerate}
                 \item {Cada Programa fue escrito en algún Lenguaje}
                 \item {Cada Lenguaje tiene algún paradigma}
+                \item {Cada Lenguaje tiene una forma de gestión de memoria}
+                \item {Cada Lenguaje tiene una forma de ejecución}
+                \item Cada lenguaje tiene varias características de su sistema de tipo
+                \begin{itemize}
+                    \item {El sistema de tipo puede ser fuerte o débil}
+                    \item {El sistema de tipo puede tener tipado estático o dinámico}
+                    \item {La Declaración de tipos puede ser implícita o explícita}
+                \end{itemize}
            \end{enumerate}}
     \item {\textbf{Restricción de Propiedades}\\
           Es este sección, se establecieron los posibles valores de 
@@ -117,6 +124,13 @@ vimos en clase, el cual consiste en lo siguientes pasos:
             \item {Un lenguaje de programación es una instancia de Lenguaje}
             \item {Un programa puede ser escrito por multiples lenguajes}
             \item {Los Lenguaje tienen una sola forma de gestión de memoria}
+            \item {Los Lenguajes tienen una sola forma de ejecución}
+            \item {Los Lenguajes pueden tener multiples paradigmas}
+            \item {El sistema de tipos puede ser fuerte o débil, pero no 
+                ambos a la vez}
+            \item {El sistema de tipos puede ser estático o dinámico, pero no
+                ambos a la vez}
+            \item {La declaración de tipos puede ser implícita, explícita o ambas al mismo tiempo}
           \end{itemize}
           %Berge aca no estoy seguro que mas poner y hacer en Protege
           }
@@ -201,6 +215,40 @@ veamos si en efecto es correcto.
         Fortran, Haskell, Java, Kotlin y Rust.
 
         Los cuales en efecto cumplen con lo pedido.
+        }
+    \item {La segunda pregunta era:
+        ¿Qué lenguajes tienen recolector de basura?\\
+        
+        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
+        la siguiente forma: (tieneGestionMemoria value RecolectorBasura)\\
+
+        Obteniéndose la lista de los siguientes lenguajes: CSharp, Erlang, Go, Haskell
+        , Java, Javascript, Kotlin, PHP, Python, Racket y Ruby.
+
+        Los cuales cumplen con lo pedido.
+        }
+    
+    \item {La tercer pregunta era:
+        ¿Qué lenguajes son multiparadigmas?\\
+        
+        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
+        la siguiente forma: (tieneParadigma min 2 Paradigma)\\
+
+        Obteniéndose la lista de los siguientes lenguajes: \dots
+
+        Los cuales cumplen con lo pedido.
+        }
+    
+    \item {La cuarta pregunta era:
+        ¿Qué lenguajes son aptos para programar de forma concurrente?\\
+        
+        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
+        la siguiente forma: (aptoParaProgramar value Concurrente)\\
+
+        Obteniéndose la lista de los siguientes lenguajes: C++, CSharp, Erlang, Fortran, Go, Haskell, 
+        Java, Kotlin, Racket y Rust.
+
+        Los cuales cumplen con lo pedido.
         }
     %Berge, falta completar con las otras preguntas
 \end{enumerate}
