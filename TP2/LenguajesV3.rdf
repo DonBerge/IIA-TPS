@@ -344,6 +344,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
@@ -360,6 +365,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
@@ -458,6 +467,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
@@ -507,6 +519,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
@@ -630,6 +644,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos">
         <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.10)  26 APR 2025 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.10)  26 APR 2025 20:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,6 +345,22 @@ Package: dirtytalk 2010/11/21 A package making "quoting" easier
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \c@dirtytalk@qdepth=\count309
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box73
@@ -438,24 +454,24 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `Informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count321
@@ -475,9 +491,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
-Package hyperref Info: Link coloring OFF on input line 43.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+Package hyperref Info: Link coloring OFF on input line 44.
  (./Informe.out) (./Informe.out)
 \@outlinefile=\write3
 \openout3 = `Informe.out'.
@@ -517,11 +533,11 @@ Package hyperref Info: Link coloring OFF on input line 43.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -529,110 +545,95 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
-
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92            \end{itemize}
-                             } [1]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+l.71     \newpage
+                  [1]
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
+
+ []
+
+<Imagenes/lenguajesParadigmasConceptos.png, id=49, 463.7325pt x 238.8925pt>
+File: Imagenes/lenguajesParadigmasConceptos.png Graphic file (type png)
+<use Imagenes/lenguajesParadigmasConceptos.png>
+Package pdftex.def Info: Imagenes/lenguajesParadigmasConceptos.png  used on input line 82.
+(pdftex.def)             Requested size: 347.79851pt x 179.16893pt.
+
+
+[2 <./Imagenes/lenguajesParadigmasConceptos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
 
 
-[2]
-<Imagenes/Ontologia.png, id=63, 1624.8705pt x 612.48825pt>
+[3]
+<Imagenes/Ontologia.png, id=72, 1624.8705pt x 612.48825pt>
 File: Imagenes/Ontologia.png Graphic file (type png)
 <use Imagenes/Ontologia.png>
-Package pdftex.def Info: Imagenes/Ontologia.png  used on input line 169.
+Package pdftex.def Info: Imagenes/Ontologia.png  used on input line 181.
 (pdftex.def)             Requested size: 346.89731pt x 130.75717pt.
-<Imagenes/Instancias.png, id=65, 313.77225pt x 413.1435pt>
+
+
+[4]
+<Imagenes/Instancias.png, id=79, 313.77225pt x 413.1435pt>
 File: Imagenes/Instancias.png Graphic file (type png)
 <use Imagenes/Instancias.png>
-Package pdftex.def Info: Imagenes/Instancias.png  used on input line 177.
+Package pdftex.def Info: Imagenes/Instancias.png  used on input line 189.
 (pdftex.def)             Requested size: 216.81pt x 285.47276pt.
-
-
-[3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.179 \end{figure}
-                   <./Imagenes/Ontologia.png>]
-<Imagenes/Relaciones.png, id=74, 767.2665pt x 378.213pt>
+<Imagenes/Relaciones.png, id=80, 767.2665pt x 378.213pt>
 File: Imagenes/Relaciones.png Graphic file (type png)
 <use Imagenes/Relaciones.png>
-Package pdftex.def Info: Imagenes/Relaciones.png  used on input line 184.
+Package pdftex.def Info: Imagenes/Relaciones.png  used on input line 196.
 (pdftex.def)             Requested size: 346.89731pt x 170.99644pt.
 
 
-[4
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.199 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.187 
-       <./Imagenes/Instancias.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--193
+l.199 
+       <./Imagenes/Ontologia.png> <./Imagenes/Instancias.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--213
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
 
-[5
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.219     \item {
-                 La segunda pregunta era: <./Imagenes/Relaciones.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+l.228     \item[Respuesta:]
+                            CSharp, Erlang, Go, Haskell, Java, Javascript, K... <./Imagenes/Relaciones.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
-
- []
-
-
-
-[6]
 
 [7] (./Informe.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -646,18 +647,18 @@ Package rerunfilecheck Info: File `Informe.out' has not changed.
 (rerunfilecheck)             Checksum: A2D3FFBBDFA50C71BEC290E9F1E690AD;1264.
  ) 
 Here is how much of TeX's memory you used:
- 14403 strings out of 471098
- 224104 string characters out of 5507369
- 633452 words of memory out of 5000000
- 40754 multiletter control sequences out of 15000+600000
+ 14885 strings out of 471098
+ 231382 string characters out of 5507369
+ 647450 words of memory out of 5000000
+ 41227 multiletter control sequences out of 15000+600000
  641188 words of font info for 92 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,7n,79p,591b,702s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,591b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/don-berge/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Informe.pdf (8 pages, 899599 bytes).
+Output written on Informe.pdf (8 pages, 924288 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 161 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  35 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

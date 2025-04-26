@@ -14,6 +14,7 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{dirtytalk}
+\usepackage{xcolor}
 
 \usepackage{titlesec}
 \usepackage[export]{adjustbox}
@@ -33,15 +34,16 @@
 \usepackage{algorithm}
 \usepackage{algorithmic}
 
+\newcommand{\high}[2]{{\color{#1} \textbf{#2}}}
 
 \title{Introducción a la Inteligencia Artificial \\
 Trabajo Práctico 2: Ontologías }
 \author{Agustín Fernández Bergé y Ramiro Gatto}
 \date{14/04/2025}
 
-
 \begin{document}
 \maketitle
+    
 
 \section{Introducción}
 La idea de este trabajo es modelar una ontología 
@@ -66,15 +68,26 @@ vimos en clase, el cual consiste en lo siguientes pasos:
                 \item {\say{¿Qué lenguajes son multiparadigmas?}} 
                 \item {\say{¿Qué lenguajes son aptos para programar de forma concurrente?}}
            \end{itemize}}
+    \newpage
     \item {\textbf{Analizar Reuso}\\
            Para poder facilitar la creación de más clases y/o tener mas 
            idea de que características usar en la ontología, una 
-           forma seria viendo otras ontología ya creadas. \\
+           forma seria viendo otras ontología ya creadas.
 
-           En nuestro caso no vimos muchas ontologías ya creados y las 
-           que vimos no nos terminaron de convencer.
-           % Berge aca si queres podes poener lo que viste, y por que no lo usamos
-           % Si usaste algo al final deci el que
+           En nuestro caso intentamos seguir el enfoque de Peter Van Roy\cite{vanroy} que
+           asocia lenguajes de programación con uno o más paradigmas de programación
+           y a su vez asocia paradigmas de programación con una o más conceptos de programación.\\
+
+           \begin{center}
+            \includegraphics[scale=0.75]{Imagenes/lenguajesParadigmasConceptos.png}
+           \end{center}
+
+           Sin embargo definir un paradigma puramente por los conceptos es complicado y puede terminar en muchos
+           paradigmas diferentes que difieren solo en un concepto. Separar demasiado los paradigmas siguiendo este enfoque 
+           puede complicar mucho el diseño de la ontología y puede hacerla demasiado general como para los objetivos que nos propusimos.
+
+           Aun asi no abandonamos este enfoque del todo, simplemente decidimos separar los conceptos(nosotros lo llamamos
+           características) de los paradigmas de programación.
            }
     \item {\textbf{Enumerar términos}\\
            En base al lo pensado en los apartados anteriores se comienza a 
@@ -132,7 +145,6 @@ vimos en clase, el cual consiste en lo siguientes pasos:
                 ambos a la vez}
             \item {La declaración de tipos puede ser implícita, explícita o ambas al mismo tiempo}
           \end{itemize}
-          %Berge aca no estoy seguro que mas poner y hacer en Protege
           }
     \item {\textbf{Crear instancia}\\
          Para esta sección simplemente creamos las instancia en las 
@@ -201,65 +213,35 @@ f (A $\rightarrow^f$ B) dejamos que el razonador haga la inversa
 \section{Consultas realizadas}
 Para ver el resultado de las consultas vamos a probar con las 
 preguntas que planteamos al momento de determinar el alcance y 
-veamos si en efecto es correcto.
-\begin{enumerate}
-    \item {La primer pregunta era: 
-        ¿Qué lenguajes funcionales tienen tipado estático y fuerte?\\
-        
-        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
-        la siguiente forma: (tieneParadigma value Funcional) and 
-        (tieneSeguridadTipo value Fuerte) and 
-        (tieneChequeoTipo value Estatico)\\
+veamos si en efecto es correcto. Escribimos las consultas utilizando
+\textbf{DL Query}.
 
-        Obteniéndose la lista de los siguientes lenguajes: C++, CSharp, 
-        Fortran, Haskell, Java, Kotlin y Rust.
-
-        Los cuales en efecto cumplen con lo pedido.
-        }
-    \item {La segunda pregunta era:
-        ¿Qué lenguajes tienen recolector de basura?\\
-        
-        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
-        la siguiente forma: (tieneGestionMemoria value RecolectorBasura)\\
-
-        Obteniéndose la lista de los siguientes lenguajes: CSharp, Erlang, Go, Haskell
-        , Java, Javascript, Kotlin, PHP, Python, Racket y Ruby.
-
-        Los cuales cumplen con lo pedido.
-        }
+\begin{description}
+    \item[Pregunta:] ¿Qué lenguajes funcionales tienen tipado estático y fuerte?
+    \item[Consulta:] (tieneParadigma \high{magenta}{value} Funcional) \high{cyan}{and} 
+    (tieneSeguridadTipo \high{magenta}{value} Fuerte) \high{cyan}{and} 
+    (tieneChequeoTipo \high{magenta}{value} Estatico)
+    \item[Respuesta:] C++, CSharp, Fortran, Haskell, Java, Kotlin y Rust.\\
     
-    \item {La tercer pregunta era:
-        ¿Qué lenguajes son multiparadigmas?\\
-        
-        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
-        la siguiente forma: (tieneParadigma min 2 Paradigma)\\
-
-        Obteniéndose la lista de los siguientes lenguajes: \dots
-
-        Los cuales cumplen con lo pedido.
-        }
+    \item[Pregunta:] ¿Qué lenguajes tienen recolector de basura?
+    \item[Consulta:] tieneGestionMemoria \high{magenta}{value} Recolector\_de\_basura
+    \item[Respuesta:] CSharp, Erlang, Go, Haskell, Java, Javascript, Kotlin, PHP, Python, Racket y Ruby.\\
     
-    \item {La cuarta pregunta era:
-        ¿Qué lenguajes son aptos para programar de forma concurrente?\\
-        
-        Usando \textbf{DL Query} escribimos la consulta, la cual tiene 
-        la siguiente forma: (aptoParaProgramar value Concurrente)\\
-
-        Obteniéndose la lista de los siguientes lenguajes: C++, CSharp, Erlang, Fortran, Go, Haskell, 
-        Java, Kotlin, Racket y Rust.
-
-        Los cuales cumplen con lo pedido.
-        }
-    %Berge, falta completar con las otras preguntas
-\end{enumerate}
-
+    \item[Pregunta:] ¿Qué lenguajes son multiparadigmas?
+    \item[Consulta:] tieneParadigma \high{magenta}{min} 2
+    \item[Respuesta:] C++, COBOL, CSharp, Erlang, Fortran, Go, Haskell, Java, Javascript, Kotlin, PHP, Python, Racket, Ruby y Rust.\\
+    
+    \item[Pregunta:] ¿Qué lenguajes son aptos para programar de forma concurrente?
+    \item[Consulta:] aptoParaProgramar \high{magenta}{value} Concurrente
+    \item[Respuesta:] C++, CSharp, Erlang, Fortran, Go, Haskell, Java, Kotlin, Racket y Rust.\\
+\end{description}
 
 \section{Análisis del razonamiento del razonador}
 %Ni la mas puta idea
 
 
 \section{Conclusion}
-Durante la creación de la ontología surgieron muchas cuestión en el 
+Durante la creación de la ontología surgieron muchas cuestiones en el 
 aspecto de como plantearla, en un inicio, por ejemplos, iban a poner 
 los lenguajes como clases y las instancias de las misma iban a ser la 
 distintas version. Pero esta idea se nos resulto muy complejo 
@@ -267,5 +249,24 @@ distintas version. Pero esta idea se nos resulto muy complejo
 la clase Característica).
 
 %Berge agrega cosas que no pudiste hacer y el porque
+
+\begin{thebibliography}{999}
+
+    \bibitem{vanroy}
+      Peter Van Roy. 
+      \href{https://webperso.info.ucl.ac.be/~pvr/VanRoyChapter.pdf}{\emph{Programming Paradigms: What Every Programmer Should 
+      Know}(PDF)}.
+    
+    \bibitem{comparacionPorTipo}
+      Wikipedia, \href{https://en.wikipedia.org/wiki/List_of_programming_languages_by_type}{\emph{List of programming languages by type}}.
+    
+    \bibitem{comparacionPorSistemaTipo}
+      Wikipedia, \href{https://en.wikipedia.org/wiki/Comparison_of_programming_languages_by_type_system}{\emph{Comparison of programming languages by type system}}.
+    
+    \bibitem{comparacionParadigma}
+      Wikipedia, \href{https://en.wikipedia.org/wiki/Comparison_of_multi-paradigm_programming_languages}{\emph{Comparison of multi-paradigm programming languages}}.
+    
+    
+\end{thebibliography}
 
 \end{document}
