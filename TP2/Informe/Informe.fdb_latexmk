@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1745711883.51482 "/home/don-berge/Documentos/IIA-TPS/TP2/Informe/Informe.tex" "Informe.pdf" "Informe" 1745711884.82293 0
+["pdflatex"] 1745716588.37679 "/home/don-berge/Documentos/IIA-TPS/TP2/Informe/Informe.tex" "Informe.pdf" "Informe" 1745716589.79271 0
   "/home/don-berge/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1745678823.57483 14040 19619b7cfa4564aecb7372d032410fed ""
-  "/home/don-berge/Documentos/IIA-TPS/TP2/Informe/Informe.tex" 1745711883.2224 12035 dd82be169433ed4f81d04727c86ee898 ""
+  "/home/don-berge/Documentos/IIA-TPS/TP2/Informe/Informe.tex" 1745716588.09382 12983 96247922c6da5632d631d9d19bfd9bec ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -131,9 +131,9 @@
   "Imagenes/Ontologia.png" 1745678303.154 660028 bbab151aac1632d211e925f080c02fb7 ""
   "Imagenes/Relaciones.png" 1745678303.156 122580 4203ca217aef5aa3e4696529b37810d6 ""
   "Imagenes/lenguajesParadigmasConceptos.png" 1745709836.56963 24852 7000dad16eef235723cb0a76223b92ab ""
-  "Informe.aux" 1745711884.74335 1846 1cc3c50052cdb5b03fce900e52cb0402 "pdflatex"
-  "Informe.out" 1745711884.74635 1264 a2d3ffbbdfa50c71bec290e9f1e690ad "pdflatex"
-  "Informe.tex" 1745711883.2224 12035 dd82be169433ed4f81d04727c86ee898 ""
+  "Informe.aux" 1745716589.68281 1846 1f3833431bd5c06bdaeb5e8075e2101d "pdflatex"
+  "Informe.out" 1745716589.68681 1264 a2d3ffbbdfa50c71bec290e9f1e690ad "pdflatex"
+  "Informe.tex" 1745716588.09382 12983 96247922c6da5632d631d9d19bfd9bec ""
   (generated)
   "Informe.aux"
   "Informe.log"

@@ -241,14 +241,25 @@ veamos si en efecto es correcto. Escribimos las consultas utilizando
 
 
 \section{Conclusion}
-Durante la creación de la ontología surgieron muchas cuestiones en el 
-aspecto de como plantearla, en un inicio, por ejemplos, iban a poner 
-los lenguajes como clases y las instancias de las misma iban a ser la 
-distintas version. Pero esta idea se nos resulto muy complejo 
-(lo mismo, íbamos a hacer con las instancias de las subclases de 
-la clase Característica).
+Además de intentar el ya mencionado enfoque de Peter Van Roy, surgieron otras
+cuestiones durante la creación de la ontología.
 
-%Berge agrega cosas que no pudiste hacer y el porque
+\begin{itemize}
+    \item Intentamos declarar los lenguajes como clases y las versiones de los mismos con instancias.
+    Puede haber diferencias significativas entre versiones de un mismo lenguaje(ejemplo, Python 3.5 en adelante
+    incluye tipado explicito opcional y C++11 incluye tipado dinamico). Pero por lo general una persona no busca elegir
+    una versión especifica de un lenguaje, sino que elige el lenguaje en si y despues una version estable.  Además que
+    la inclusión de las versiones de los lenguajes esta fuera del alcance que necesitamos para responder nuestras preguntas.
+    \item Intentamos incluir como característica el nivel de abstracción del lenguaje(si es de bajo o alto nivel).
+    El nivel de abstracción es un concepto relativo y no es facil de definir sin conocer el lenguaje en si. C hasta hace no mucho
+    era un lenguaje de alto nivel ya que proveia de conceptos structs y funciones recursivas parametrizadas. Sin embargo en la actualidad
+    es considerado de bajo nivel debido a que no tiene caracteristicas como un recolector de basura. Como el nivel de abstracción no es facilmente
+    definible, decidimos no incluirlo como característica.   
+\end{itemize}
+
+...
+
+% Gatto, no se que mas poner
 
 \begin{thebibliography}{999}
 
