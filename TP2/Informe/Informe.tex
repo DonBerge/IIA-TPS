@@ -48,7 +48,7 @@ Trabajo Práctico 2: Ontologías }
 \section{Introducción}
 La idea de este trabajo es modelar una ontología 
 (en Protege) sobre lenguajes de  
-programación, en la cual se relaciones características que estos 
+programación, en la cual se represente las características que estos 
 poseen. El principal uso de la misma es permitir ayudar a un programador
 a elegir un lenguaje apropiado para un proyecto según sus necesidades. 
 
@@ -59,8 +59,8 @@ vimos en clase, el cual consiste en lo siguientes pasos:
 \begin{enumerate}
     \item {\textbf{Determinar dominio y alcance}\\
            En esta primera instancia nos planteamos preguntas que deben 
-           ser respondidas por la ontología. ESte deben estar relacionadas 
-           con: el dominio que cubre, el propósito de la miso, para que 
+           ser respondidas por la ontología. Estas deben estar relacionadas 
+           con: el dominio que cubre, el propósito de la misma y para que 
            consultas da solución. Nosotros propusimos las siguientes:
            \begin{itemize}
                 \item {\say{¿Qué lenguajes funcionales tienen tipado estático y fuerte?}}
@@ -86,11 +86,11 @@ vimos en clase, el cual consiste en lo siguientes pasos:
            paradigmas diferentes que difieren solo en un concepto. Separar demasiado los paradigmas siguiendo este enfoque 
            puede complicar mucho el diseño de la ontología y puede hacerla demasiado general como para los objetivos que nos propusimos.
 
-           Aun asi no abandonamos este enfoque del todo, simplemente decidimos separar los conceptos(nosotros lo llamamos
+           Aun asi no abandonamos este enfoque del todo, simplemente decidimos separar los conceptos (nosotros lo llamamos
            características) de los paradigmas de programación.
            }
     \item {\textbf{Enumerar términos}\\
-           En base al lo pensado en los apartados anteriores se comienza a 
+           En base al lo pensado en los apartados anteriores se comenzó a 
            enumerar los elementos que van a aparecer en la ontología.
            Pensando:
            \begin{itemize}
@@ -105,8 +105,7 @@ vimos en clase, el cual consiste en lo siguientes pasos:
            \end{itemize}}
     \item {\textbf{Definición de clases y jerarquía}\\
            Para poder definir las clases nos guiamos por la idea de que 
-           una clase es una colección de elementos con propiedades 
-
+           una clase es una colección de elementos con propiedades
            similares (Ejemplos de clases en esta ontología serian los 
            Lenguajes y Programas).\\
 
@@ -131,7 +130,7 @@ vimos en clase, el cual consiste en lo siguientes pasos:
                 \end{itemize}
            \end{enumerate}}
     \item {\textbf{Restricción de Propiedades}\\
-          Es este sección, se establecieron los posibles valores de 
+          En esta sección, se establecieron los posibles valores de 
           los slots teniendo se: 
           \begin{itemize}
             \item {Un lenguaje de programación es una instancia de Lenguaje}
@@ -158,7 +157,7 @@ vimos en clase, el cual consiste en lo siguientes pasos:
 \section{Conceptos representados}
 En la ontología final representamos los siguientes conceptos
 \begin{itemize}
-    \item {Características, cualidades que cumplen los lenguajes de programación, 
+    \item {Característica, cualidades que cumplen los lenguajes de programación, 
         nosotros optamos pos usar:
         \begin{itemize}
             \item {Gestión de memoria, representa las forma en las que los 
@@ -167,12 +166,19 @@ En la ontología final representamos los siguientes conceptos
             \item {Paradigma, con paradigma nos referimos al
                 enfoque para crear programs}
             \item {Sistema de tipo, esta clasificación se divide en 3 mas
-                Chequeo de tipo (forma de verificar las signaturas de las 
-                estructuras), Declaración de tipo (..), Seguridad de tipo 
-                (..)}
+                Chequeo de tipo (verificar que los tipos de datos 
+                en un programa sean correctos), Declaración de tipo 
+                (especificar explícitamente el tipo de una variable), 
+                Seguridad de tipo (garantizar que las operaciones solo 
+                se realicen entre datos de tipos compatibles)}
         \end{itemize}}
-    \item {Lenguajes, hace referencia a todos los lenguajes de programación 
+    \item {Lenguaje, hace referencia a todos los lenguajes de programación 
         que decidimos agregar}
+    \item {LenguajeInteresnte, este es una clase definida (no primitiva) en la 
+            la cual fue creada para probar el razonador, en esta solo se encentran 
+            las instancias de lenguajes que cumplen una serie de restricciones 
+            (posee al menos 3 paradigmas, posee recolector de basura y tiene 
+            chequeo y seguridad de tipos)}
 \end{itemize}
 
 \noindent Quedándonos la siguiente ontología:
@@ -186,14 +192,14 @@ En la ontología final representamos los siguientes conceptos
 Las instancias nos quedaron de la siguiente forma:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.5\textwidth]{Imagenes/Instancias.png}
+    \includegraphics[width=.5\textwidth]{Imagenes/Instancias3.png}
     \caption{Instancia}
 \end{figure}
 
 En cuanto al temas de las relaciones tenemos las siguientes
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.8\textwidth]{Imagenes/Relaciones.png}
+    \includegraphics[width=.8\textwidth]{Imagenes/Relaciones3.png}
     \caption{Relaciones, las inversas no aparecen}
 \end{figure}
 
@@ -213,7 +219,7 @@ f (A $\rightarrow^f$ B) dejamos que el razonador haga la inversa
 \section{Consultas realizadas}
 Para ver el resultado de las consultas vamos a probar con las 
 preguntas que planteamos al momento de determinar el alcance y 
-veamos si en efecto es correcto. Escribimos las consultas utilizando
+veamos si en efecto son correctas. Escribimos las consultas utilizando
 \textbf{DL Query}.
 
 \begin{description}
@@ -237,8 +243,34 @@ veamos si en efecto es correcto. Escribimos las consultas utilizando
 \end{description}
 
 \section{Análisis del razonamiento del razonador}
-%Ni la mas puta idea
+Para esta sección veamoslo con algunas de las consultas de 
+la seccion anterior anteriores.\\
 
+Empecemos con: tieneGestionMemoria \high{magenta}{value} Recolector\_de\_basura\\
+Si vemos la  respuesta que nos dan se ve que una de ellas es Haskell,
+ entonces para responder porque da este resultado podemos ver la explicación, siendo esta. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{Imagenes/Explicacion1.png}
+    \caption{}
+\end{figure}
+La cual nos dice que Recolector\_de\_basura se relacion con Haskell por medio de 
+la relacion esGestionMemoriaDe y esta es inversa de tieneGestionMemoria por lo 
+que el razonador puede inferir que Haskell se relaciona con Recolector\_de\_basura 
+mediante tieneGestionMemoria (dando el resultado correcto)
+
+\noindent Veamos ahora con: tieneParadigma \high{magenta}{min} 2\\
+De la respuesta vemos que Rust es una de ellas, veamos el porque.\\
+El razonamiento fue el siguiente:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.5\textwidth]{Imagenes/Explicacion2.png}
+    \caption{}
+\end{figure}
+Donde en un inicio se tiene que Rust tiene 3 tipos paradigmas (distintos entre si). 
+Lo que hace el razonador es verificar que haya al menos 2 distintos, y como 
+los tres son distintos entre si, el razonador encuentra 3 justificaciones 
+validas para dar a Rust como respuesta.
 
 \section{Conclusion}
 Además de intentar el ya mencionado enfoque de Peter Van Roy, surgieron otras
@@ -246,20 +278,16 @@ cuestiones durante la creación de la ontología.
 
 \begin{itemize}
     \item Intentamos declarar los lenguajes como clases y las versiones de los mismos con instancias.
-    Puede haber diferencias significativas entre versiones de un mismo lenguaje(ejemplo, Python 3.5 en adelante
-    incluye tipado explicito opcional y C++11 incluye tipado dinamico). Pero por lo general una persona no busca elegir
+    Puede haber diferencias significativas entre versiones de un mismo lenguaje (ejemplo, Python 3.5 en adelante
+    incluye tipado explicito opcional y C++11 incluye tipado dinámico). Pero por lo general una persona no busca elegir
     una versión especifica de un lenguaje, sino que elige el lenguaje en si y despues una version estable.  Además que
     la inclusión de las versiones de los lenguajes esta fuera del alcance que necesitamos para responder nuestras preguntas.
-    \item Intentamos incluir como característica el nivel de abstracción del lenguaje(si es de bajo o alto nivel).
-    El nivel de abstracción es un concepto relativo y no es facil de definir sin conocer el lenguaje en si. C hasta hace no mucho
-    era un lenguaje de alto nivel ya que proveia de conceptos structs y funciones recursivas parametrizadas. Sin embargo en la actualidad
-    es considerado de bajo nivel debido a que no tiene caracteristicas como un recolector de basura. Como el nivel de abstracción no es facilmente
+    \item Intentamos incluir como característica el nivel de abstracción del lenguaje (si es de bajo o alto nivel).
+    El nivel de abstracción es un concepto relativo y no es fácil de definir sin conocer el lenguaje en si. C hasta hace no mucho
+    era un lenguaje de alto nivel ya que proveía de conceptos structs y funciones recursivas parametrizadas. Sin embargo en la actualidad
+    es considerado de bajo nivel debido a que no tiene características como un recolector de basura. Como el nivel de abstracción no es facilmente
     definible, decidimos no incluirlo como característica.   
 \end{itemize}
-
-...
-
-% Gatto, no se que mas poner
 
 \begin{thebibliography}{999}
 

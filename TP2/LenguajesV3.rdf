@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programación/"
-     xml:base="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programación/"
+<rdf:RDF xmlns="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion/"
+     xml:base="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:untitled-ontology-33="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#"
+     xmlns:Lenguajes_de_Programacionuntitled-ontology-33="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#"
      xmlns:Lenguajes_de_Programaciónuntitled-ontology-33="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programación">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion">
         <rdfs:comment>Una ontologia sobre Lenguajes de Programacion</rdfs:comment>
     </owl:Ontology>
     
@@ -25,130 +26,130 @@
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programación#aptoParaProgramar -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion#aptoParaProgramar -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programación#aptoParaProgramar">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneParadigma"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion#aptoParaProgramar">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneParadigma"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esChequeoTipoDe -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esChequeoTipoDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esChequeoTipoDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneChequeoTipo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esChequeoTipoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneChequeoTipo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esDeclaracionTipoDe -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esDeclaracionTipoDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esDeclaracionTipoDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneDeclaracionTipo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esDeclaracionTipoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneDeclaracionTipo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esFormaEjecucionDe -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esFormaEjecucionDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esFormaEjecucionDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneFormaEjecucion"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esFormaEjecucionDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneFormaEjecucion"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esGestionMemoriaDe -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esGestionMemoriaDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esGestionMemoriaDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneGestionMemoria"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esGestionMemoriaDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneGestionMemoria"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esParadigmaDe -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esParadigmaDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esParadigmaDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneParadigma"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esParadigmaDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneParadigma"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esSeguridadTipoDe -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esSeguridadTipoDe -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#esSeguridadTipoDe">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneSeguridadTipo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#esSeguridadTipoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneSeguridadTipo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#programadoEn -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#programadoEn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#programadoEn">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#usadoEn"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#programadoEn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#usadoEn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneChequeoTipo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneChequeoTipo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneChequeoTipo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#ChequeoTipo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneChequeoTipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneDeclaracionTipo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneDeclaracionTipo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneDeclaracionTipo">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneDeclaracionTipo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#DeclaracionTipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#DeclaracionTipo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneFormaEjecucion -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneFormaEjecucion -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneFormaEjecucion">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#FormaEjecucion"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneFormaEjecucion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#FormaEjecucion"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneGestionMemoria -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneGestionMemoria -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneGestionMemoria">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#GestionMemoria"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneGestionMemoria">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#GestionMemoria"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneParadigma -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneParadigma -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneParadigma">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneParadigma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneSeguridadTipo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneSeguridadTipo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#tieneSeguridadTipo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SeguridadTipo"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneSeguridadTipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#usadoEn -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#usadoEn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#usadoEn"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#usadoEn"/>
     
 
 
@@ -163,84 +164,114 @@
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Assembler -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion#LenguajeInteresante -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Assembler">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion#LenguajeInteresante">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneChequeoTipo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneSeguridadTipo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneGestionMemoria"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Recolector_de_basura"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#tieneParadigma"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Caracteristica -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Assembler -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Caracteristica"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#ChequeoTipo -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#ChequeoTipo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SistemaTipo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Assembler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#DeclaracionTipo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Caracteristica -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#DeclaracionTipo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SistemaTipo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Caracteristica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SistemaTipo"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#FormaEjecucion -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#DeclaracionTipo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#FormaEjecucion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Caracteristica"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#DeclaracionTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SistemaTipo"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#GestionMemoria -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#FormaEjecucion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#GestionMemoria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Caracteristica"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#FormaEjecucion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Caracteristica"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#GestionMemoria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Caracteristica"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#GestionMemoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Caracteristica"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SeguridadTipo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SeguridadTipo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SistemaTipo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Caracteristica"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SistemaTipo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SistemaTipo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Caracteristica"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SistemaTipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SistemaTipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SistemaTipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Caracteristica"/>
     </owl:Class>
     
 
@@ -256,583 +287,591 @@
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Android -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Android -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Android">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Android">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneGestionMemoria rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Manual"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Debil"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneGestionMemoria rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Manual"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Debil"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#COBOL -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#COBOL -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#COBOL">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#COBOL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CSharp -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CSharp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Cardano -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Cardano -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Cardano">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Haskell"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Cardano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Haskell"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CivilizationII -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CivilizationII -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CivilizationII">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Pascal"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CivilizationII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Pascal"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#FormaEjecucion"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#COBOL"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CSharp"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fortran"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Racket"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#FormaEjecucion"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#COBOL"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fortran"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Racket"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Declarativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Debil -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Debil -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Debil">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SeguridadTipo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Debil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Declarativo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Declarativo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#ChequeoTipo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Doom -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Doom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Doom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CSharp"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Go"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Haskell"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Javascript"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Rust"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#x86"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C++"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Doom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Go"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Haskell"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#x86"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dropbox -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dropbox -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dropbox">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Go"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Rust"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dropbox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Go"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Erlang -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Erlang -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Erlang">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Erlang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Declarativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#ChequeoTipo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#DeclaracionTipo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#DeclaracionTipo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fortran -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fortran -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fortran">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fortran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SeguridadTipo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Git -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Git -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Git">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Git">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Go -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Go -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Go">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Go">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Haskell -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Haskell -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Haskell">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Declarativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Haskell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Declarativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#DeclaracionTipo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#DeclaracionTipo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Interpretado -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Interpretado">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#FormaEjecucion"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#R"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#FormaEjecucion"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esFormaEjecucionDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#R"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Javascript -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Javascript">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Interpretado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Debil"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Debil"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Kotlin -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Kotlin -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Kotlin">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Kotlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Manual -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Manual -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Manual">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#GestionMemoria"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#COBOL"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fortran"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Pascal"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Rust"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C++"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#GestionMemoria"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Recolector_de_basura"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#COBOL"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fortran"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Pascal"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#MicrosoftOffice -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#MicrosoftOffice -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#MicrosoftOffice">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CSharp"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C++"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#MicrosoftOffice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Mips -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Mips -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Mips">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Assembler"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Mips">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Assembler"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Mozilla_FireFox -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Mozilla_FireFox -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Mozilla_FireFox">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Rust"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C++"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Mozilla_FireFox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Netflix -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Netflix -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Netflix">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Javascript"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Netflix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#PHP -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#PHP -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#PHP">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Interpretado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Debil"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#PHP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Debil"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Pascal -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Pascal -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Pascal">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Debil"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Pascal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Debil"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Interpretado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneGestionMemoria rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Recolector_de_basura"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneGestionMemoria rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Recolector_de_basura"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#R -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#R -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#R">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#R">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#RStudio -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#RStudio -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#RStudio">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#R"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#RStudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#R"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Racket -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Racket -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Racket">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Racket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Recolector_de_basura -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Recolector_de_basura -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Recolector_de_basura">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#GestionMemoria"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#CSharp"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Erlang"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Go"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Haskell"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Javascript"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Kotlin"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#PHP"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Racket"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Ruby"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Recolector_de_basura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#GestionMemoria"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Erlang"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Go"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Haskell"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Kotlin"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#PHP"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Racket"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:esGestionMemoriaDe rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Ruby"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Ruby -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Ruby -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Ruby">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Dinamico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Interpretado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Ruby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Dinamico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Interpretado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Rust -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Rust">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Compilado"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneFormaEjecucion rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Compilado"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Twitter -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Twitter -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Twitter">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Java"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Javascript"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Python"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Ruby"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Twitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Ruby"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#VS_Code -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#VS_Code -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#VS_Code"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Visual">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Paradigma"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#VS_Code">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#WhatsApp -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#WhatsApp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Programa"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Erlang"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Visual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Paradigma"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#x86 -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#WhatsApp -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#x86">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Assembler"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#WhatsApp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Programa"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:programadoEn rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Erlang"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C++ -->
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#x86 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#C++">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Lenguaje"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Estatico"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Explicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Implicito"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Concurrente"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Funcional"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Imperativo"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Orientado_a_Objetos"/>
-        <Lenguajes_de_Programaciónuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#Fuerte"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#x86">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Assembler"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Lenguaje"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneChequeoTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Estatico"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Explicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneDeclaracionTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Implicito"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Concurrente"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Funcional"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Imperativo"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneParadigma rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Orientado_a_Objetos"/>
+        <Lenguajes_de_Programacionuntitled-ontology-33:tieneSeguridadTipo rdf:resource="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fuerte"/>
     </owl:NamedIndividual>
     
 
@@ -848,10 +887,35 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#ChequeoTipo"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#DeclaracionTipo"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#SeguridadTipo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#ChequeoTipo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#DeclaracionTipo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#SeguridadTipo"/>
         </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#COBOL"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#CSharp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Erlang"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Fortran"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Go"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Haskell"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Java"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Javascript"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Kotlin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Mips"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#PHP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Pascal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Python"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#R"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Racket"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Ruby"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#Rust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#x86"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#C++"/>
+        </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
 
