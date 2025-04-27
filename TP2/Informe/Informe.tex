@@ -19,12 +19,12 @@
 \usepackage{titlesec}
 \usepackage[export]{adjustbox}
 
-\setcounter{secnumdepth}{4}
+%\setcounter{secnumdepth}{4}
 
-\titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 
 \usepackage[a4paper, total={6in, 8in}]{geometry}
@@ -35,6 +35,49 @@
 \usepackage{algorithmic}
 
 \newcommand{\high}[2]{{\color{#1} \textbf{#2}}}
+
+\usepackage{fancyhdr} % Para personalizar encabezados y pies de página
+
+\fancypagestyle{firstpage}{
+    \fancyhf{}
+    \setlength{\headsep}{80pt} % Ajustar la separación entre el encabezado y el contenido
+    \addtolength{\topmargin}{0pt} % Ajustar el margen superior
+
+    % \addtolength{\textheight}{1in} % Ajustar la altura del texto
+    % \addtolength{\footskip}{-1.5in} % Ajustar la separación entre el pie de página y el contenido
+
+    \fancyhead[L]{    
+        \vspace{-0.8cm}
+        \includegraphics[width=0.12\textwidth]{logo.jpg}
+    }
+    \fancyhead[R]{\setstretch{0.8}\begin{tabular}{l}
+        \textsc{\footnotesize Facultad de Ciencias Exactas, Ingeniería y Agrimensura} \\
+        \textsc{\footnotesize Escuela de Ciencias Exactas y Naturales} \\
+        \textsc{\footnotesize Departamento de Ciencia de la Computación} \\
+        \textsc{\footnotesize Introducción a la Inteligencia Artificial} \\
+    \end{tabular}}
+
+    \fancyhead[C]{\vspace{-1.7cm}Integrantes: Agustín Fernández Bergé y Ramiro Gatto\\}
+
+    \fancyfoot[L]{\footnotesize Trabajo Práctico 2: Ontologías} % Pie de página izquierdo
+    \fancyfoot[R]{\footnotesize Página \thepage}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+}
+
+\pagestyle{fancy} % Activar el estilo fancyhdr
+\fancyhf{} % Limpiar encabezados y pies
+\setlength{\headheight}{14.49998pt} % Ajustar la altura del encabezado
+\addtolength{\topmargin}{-1.5cm} % Compensar el margen superior
+\addtolength{\textheight}{4.5cm} % Aumentar la altura del texto
+\fancyhead[L]{Introducción a la Inteligencia Artificial} % Encabezado izquierdo
+\fancyfoot[L]{\footnotesize Trabajo Práctico 2: Ontologías} % Pie de página izquierdo
+\fancyfoot[R]{\footnotesize Página \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt} % Desactivar línea superior
+\renewcommand{\footrulewidth}{0.4pt} % Desactivar línea inferior (ya usamos manualmente la línea)
+
+
 
 \title{Introducción a la Inteligencia Artificial \\
 Trabajo Práctico 2: Ontologías }
@@ -68,7 +111,6 @@ vimos en clase, el cual consiste en lo siguientes pasos:
                 \item {\say{¿Qué lenguajes son multiparadigmas?}} 
                 \item {\say{¿Qué lenguajes son aptos para programar de forma concurrente?}}
            \end{itemize}}
-    \newpage
     \item {\textbf{Analizar Reuso}\\
            Para poder facilitar la creación de más clases y/o tener mas 
            idea de que características usar en la ontología, una 
