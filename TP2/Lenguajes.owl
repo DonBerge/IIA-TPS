@@ -1,0 +1,1588 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion">
+    <Prefix name="" IRI="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacion/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-33" IRI="http://www.semanticweb.org/ramir/ontologies/2025/3/untitled-ontology-33#"/>
+    <Prefix name="Lenguajes_de_Programacionuntitled-ontology-33" IRI="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programacionuntitled-ontology-33#"/>
+    <Prefix name="Lenguajes_de_Programaciónuntitled-ontology-33" IRI="http://www.semanticweb.org/ramir/ontologies/2025/3/Lenguajes_de_Programaciónuntitled-ontology-33#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Una ontologia sobre Lenguajes de Programacion</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#LenguajeInteresante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#Assembler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#Caracteristica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#DeclaracionTipo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#FormaEjecucion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#GestionMemoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#Programa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="untitled-ontology-33#SistemaTipo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aptoParaProgramar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#esChequeoTipoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#esDeclaracionTipoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#esParadigmaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#esSeguridadTipoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="untitled-ontology-33#usadoEn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Android"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Cardano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#CivilizationII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Dropbox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Git"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#MicrosoftOffice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Mips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Mozilla_FireFox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Netflix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#RStudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Twitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#VS_Code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#WhatsApp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#x86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#LenguajeInteresante"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+                <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+                <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+                <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+            </ObjectHasValue>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+                <Class IRI="untitled-ontology-33#Paradigma"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#Assembler"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+        <Class IRI="untitled-ontology-33#SistemaTipo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#DeclaracionTipo"/>
+        <Class IRI="untitled-ontology-33#SistemaTipo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#FormaEjecucion"/>
+        <Class IRI="untitled-ontology-33#Caracteristica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#GestionMemoria"/>
+        <Class IRI="untitled-ontology-33#Caracteristica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <Class IRI="untitled-ontology-33#Caracteristica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+        <Class IRI="untitled-ontology-33#SistemaTipo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="untitled-ontology-33#SistemaTipo"/>
+        <Class IRI="untitled-ontology-33#Caracteristica"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+        <Class IRI="untitled-ontology-33#DeclaracionTipo"/>
+        <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Android"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Cardano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#CivilizationII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#FormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dropbox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#DeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Git"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#DeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#FormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#GestionMemoria"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#MicrosoftOffice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Assembler"/>
+        <NamedIndividual IRI="untitled-ontology-33#Mips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Mozilla_FireFox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Netflix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#RStudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#GestionMemoria"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#Twitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#VS_Code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Programa"/>
+        <NamedIndividual IRI="untitled-ontology-33#WhatsApp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Assembler"/>
+        <NamedIndividual IRI="untitled-ontology-33#x86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Mips"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#x86"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Android"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Android"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Cardano"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#CivilizationII"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#x86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Doom"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dropbox"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dropbox"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dropbox"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Git"/>
+        <NamedIndividual IRI="untitled-ontology-33#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Declarativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Visual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+        <NamedIndividual IRI="untitled-ontology-33#COBOL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fortran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Manual"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#MicrosoftOffice"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#MicrosoftOffice"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Mozilla_FireFox"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Mozilla_FireFox"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Netflix"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Netflix"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Netflix"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Pascal"/>
+        <NamedIndividual IRI="untitled-ontology-33#Debil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#RStudio"/>
+        <NamedIndividual IRI="untitled-ontology-33#R"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#CSharp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Go"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Haskell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Kotlin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#PHP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Racket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <NamedIndividual IRI="untitled-ontology-33#Recolector_de_basura"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Dinamico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Interpretado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Compilado"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#Rust"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Twitter"/>
+        <NamedIndividual IRI="untitled-ontology-33#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Twitter"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Twitter"/>
+        <NamedIndividual IRI="untitled-ontology-33#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#Twitter"/>
+        <NamedIndividual IRI="untitled-ontology-33#Ruby"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#VS_Code"/>
+        <NamedIndividual IRI="untitled-ontology-33#Javascript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <NamedIndividual IRI="untitled-ontology-33#WhatsApp"/>
+        <NamedIndividual IRI="untitled-ontology-33#Erlang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Estatico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Explicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Implicito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Concurrente"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Funcional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Imperativo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Orientado_a_Objetos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <NamedIndividual IRI="untitled-ontology-33#C++"/>
+        <NamedIndividual IRI="untitled-ontology-33#Fuerte"/>
+    </ObjectPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#aptoParaProgramar"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#esChequeoTipoDe"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#esDeclaracionTipoDe"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#esFormaEjecucionDe"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#esGestionMemoriaDe"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#esParadigmaDe"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#esSeguridadTipoDe"/>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <ObjectProperty IRI="untitled-ontology-33#usadoEn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <Class IRI="untitled-ontology-33#Programa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#programadoEn"/>
+        <Class IRI="untitled-ontology-33#Lenguaje"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#tieneChequeoTipo"/>
+        <Class IRI="untitled-ontology-33#ChequeoTipo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#tieneDeclaracionTipo"/>
+        <Class IRI="untitled-ontology-33#DeclaracionTipo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#tieneFormaEjecucion"/>
+        <Class IRI="untitled-ontology-33#FormaEjecucion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#tieneGestionMemoria"/>
+        <Class IRI="untitled-ontology-33#GestionMemoria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#tieneParadigma"/>
+        <Class IRI="untitled-ontology-33#Paradigma"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="untitled-ontology-33#tieneSeguridadTipo"/>
+        <Class IRI="untitled-ontology-33#SeguridadTipo"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
