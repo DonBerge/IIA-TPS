@@ -1,0 +1,5 @@
+# No subir el entorno virtual
+.venv
+
+# No subir el dataset
+dataset

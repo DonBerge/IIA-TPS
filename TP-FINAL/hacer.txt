@@ -1,0 +1,21 @@
+Que hay que hacer?
+
+1. Entrenar inception para que reconozca los sellos de mano
+2. Explorar distintos parametros de entrenamiento
+3. Probar distintos metodos
+4. Analizar los resultados obtenidos
+
+Metodos que se me ocurren:
+1. Probar la red como esta con los datos que tenemos
+2. Congelar la red, reemplazar la ultima capa y entrenarla para detectar los sellos.
+3. Idem 2 pero realizando fine tunning al final
+4. Probar 2 y 3 pero esta vez realizando data augmentation.
+5. Probar los metodos anteriores pero descongelando mas capas(intentar que no sea prohibitivo en tiempo)
+6. Probar de entrenar la red para que detecte manos y de ahi adaptarla a los sellos.
+
+El dataset contiene sellos hechos en la vida real, estaria bueno probar tambien
+con otros contextos como en el anime, manga, vida real pero con otras personas, diferentes
+encuadres, etc.
+
+Una vez hecho esto, agarrar el modelo que mejores resultados dio y probarlo para que interprete
+la secuencia en un video.
