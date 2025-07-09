@@ -7,5 +7,7 @@ dataset
 # No subir los modelos(pesan una banda)
 models
 
+*.keras
+*.h5
 No subir las screenshots
 screenshots
