@@ -9,5 +9,7 @@ models
 
 *.keras
 *.h5
-No subir las screenshots
+#No subir las screenshots
 screenshots
+
+dataset\ del\ chino
