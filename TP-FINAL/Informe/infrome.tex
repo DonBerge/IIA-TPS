@@ -24,6 +24,8 @@
 
 \usepackage{indentfirst}
 
+\hbadness=10000
+
 \setcounter{secnumdepth}{4}
 
 \titleformat{\paragraph}
@@ -34,14 +36,14 @@
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 
 
-\title{Trabajo PRactico Final\\ Inteligencia Artificial}
-\author{Agustin Fernandez Berge y Ramiro Gatto}
+\title{Trabajo Práctico Final\\ Inteligencia Artificial}
+\author{Agustín Fernández Bergé y Ramiro Gatto}
 
 \begin{document}
 \maketitle
 
 \section{Introducción}
-La idea principal del proyecto es usar InceptionV3 para poder clasificar los distintos \say{sellos} (gestos con las manos) del anime de Naruto. Ademas, también realizar fine-tuning sobre las ultimas capas para mejorar el modelo.\\
+La idea principal del proyecto es usar InceptionV3 para poder clasificar los distintos \say{sellos} (gestos con las manos) del anime de Naruto. Para hacer esto hicimos transfer learning sobre el modelo de InceptionV3 más un finetunning de las ultimas capas del modelo.\\
 
 \begin{figure}[h]
     \centering
@@ -49,26 +51,119 @@ La idea principal del proyecto es usar InceptionV3 para poder clasificar los dis
     \caption{Sellos Basicos}
 \end{figure}
 
-Para el proyecto se utilizaron 3 dataset de proyectos similar (primero empezamos con uno y lo fuimos ampliando), mas una cuantas imágenes que agregamos para que este sea un poco mas variado.\\
+Para el proyecto se utilizaron 3 dataset de proyectos similares (primero empezamos con uno y lo fuimos ampliando), más una cuantas imágenes que agregamos para que este sea un poco más variado.\\
 
+\section{Primer acercamiento}
+Como experiencia inicial quisimos probar como clasificaba InceptionV3 usando los pesos de Imagenet las imagenes del dataset, para ver en que categorias clasificaba cada sello. Nos dimos cuenta que en algunos sellos una clase se activaba mucho más que las otras, mientras que para otros sellos 3 o 5 clases eran las que mas se activaban respecto a otras. Aqui hay un ejemplo para varios sellos:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Imagenes/tiger_inception_plano.png}
+    \caption{Clasificación de InceptionV3 para el sello del tigre}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Imagenes/ox_inception_plano.png}
+    \caption{Clasificación de InceptionV3 para el sello del buey}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Imagenes/bird_inception_plano.png}
+    \caption{Clasificación de InceptionV3 para el sello del pajaro}
+\end{figure}
+
+Por lo que si queriamos que inception clasificara los sellos, ibamos a necesitar hacer un refinamiento del modelo.
 
 \section{Primeros pasos}
-\subsection{Primer Problema}
-Lo primero que hicimos fue leer el materia subido en la pagina de keras sobre InceptionV3 con fine-tuning \cite{Paginakeras}
-Usando este primer modelo mas un poco de información extra para poder adaptarlo a mas de 2 clases (el ejemplo de keras solo tiene dos clases) llegamos a un modelo que posee el siguiente accuracy:
+Lo primero que hicimos fue leer el materia subido en la pagina de Keras sobre transfer learning y fine-tuning \cite{Paginakeras}. Los pasos de dicho tutorial se pueden resumir como siguen:
+\begin{enumerate}
+    \item Cargar los datasets de entrenamiento, validación y test.
+    \item Aplicar el preprocesamiento correspondiente para que el modelo pueda trabajar con las imágenes. En el caso de InceptionV3, el preprocesamiento consiste en redimensionar las imagenes a un tamaño común y normalizar los valores de los píxeles a valores del conjunto [-1,1].
+    \item Aplicar data augmentation a los datasets de entrenamiento y validación(este paso inicialmente lo saltamos).
+    \item Construir las capas del modelo, dejando la capa de InceptionV3 congelada (es decir, sin entrenar) y agregando una capa densa al final para la clasificación.
+    \item Compilar el modelo, esto es, definir la función de loss, el optimizador y las métricas a utilizar.
+    \item Entrenar el modelo una cantidad determinada de epocas.
+    \item Descongelar el modelo de InceptionV3 y realizar un nuevo entrenamiento, esta vez con un learning rate más bajo.
+    \item Finalmente, evaluar el modelo en los datasets de entrenamiento, validación y test para evaluar rendimiento.
+\end{enumerate}
+
+Modificamos un poco las sugerencias del tutorial y agregamos un par de cosas más. principalmente porque el tutorial esta orientado a clasificar imagenes en 2 clases y nosotros queríamos clasificar en 12 clases. Para esto hicimos lo siguiente:
+
+\begin{itemize}
+    \item En vez de usar la función de loss Binary Crossentropy, usamos Categorical Crossentropy. Estas entropías no son las mismas que se usan en los arboles de decisión, basicamente la Binary Crossentropy se usa para clasificar en 2 clases mientras que la Categorical Crossentropy es una generalización de la Binary Crossentropy para clasificar en más de 2 clases.
+    \item En la capa densa del final del modelo, usamos 12 neuronas (una por cada clase) en lugar de 2 y usamos como función de activación Softmax. Softmax es una generalización de la función Sigmoide y es utilizada como función de activación al clasificar en más de 2 clases.
+    \item Cambiamos la metrica del modelo, en cada epoca se le puede indicar al modelo que calcule una serie de metricas para que las muestre al usuario. Nosotros le indicamos que muestre el accuracy de los conjuntos de entrenamiento y validación en lugar de la binary accuracy.
+    \item Agregamos 3 callbacks para modificar el proceso de entrenamiento:
+    \begin{itemize}
+        \item EarlyStopping: Si el accuracy del conjunto de validación no mejora en un número determinado de épocas, se detiene el entrenamiento y se restauran los pesos que obtuvieron el mejor accuracy.
+        \item ModelCheckpoint: Si durante el entrenamiento se obtiene una mejora en el accuracy del conjunto de validación, se guardan los pesos del modelo en un archivo en disco.
+        \item ReduceLROnPlateau: Si el accuracy del conjunto de validación no mejora en un número determinado de epocas(menor a las configuradas en EarlyStopping), se reduce el learning rate en un factor de 0.1.
+    \end{itemize}
+\end{itemize}
+ 
+\subsection{El primer modelo}
+El primer modelo que hicimos tiene la siguiente estructura:
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|c|r|c|}
+\hline
+\textbf{Layer (type)} & \textbf{Output Shape} & \textbf{Param \#} & \textbf{Trainable} \\
+\hline
+rescaling (Rescaling) & (None, 150, 150, 3) & 0 & - \\
+inception\_v3 (Functional) & (None, 3, 3, 2048) & 21,802,784 & N \\
+global\_average\_pooling2d (GlobalAveragePooling2D) & (None, 2048) & 0 & - \\
+dropout (Dropout) & (None, 2048) & 0 & - \\
+dense (Dense) & (None, 13) & 26,637 & Y \\
+\hline
+\end{tabular}
+}
+\caption{Estructura del primer modelo}
+\end{table}
+
+\begin{description}
+    \item[Reescaling] Esta capa se encarga de normalizar los valores de los pixeles de las imagenes a [-1, 1]. Esto es necesario para que InceptionV3 pueda trabajar con las imagenes,
+    \item[InceptionV3] La capa base del modelo, inceptionv3 esta cargado con los pesos de imagenet y se encuentra congelado, es decir, no se entrena durante el entrenamiento inicial.
+    \item[GlobalAveragePooling2D] Esta capa se encarga de reducir la dimensionalidad de la salida de InceptionV3.
+    \item[Dropout] Esta capa se encarga de apagar, de manera aleatoria, un porcentaje de las neuronas de la capa anterior para evitar el overfitting.
+    \item[Dense] Esta es la capa de salida del modelo, es una capa donde todas las neuronas de la capa anterior estan conectadas con 12 neuronas de salida, las cuales tienen una función de activación Sotmax.
+\end{description}
+
+El primer entrenamiento se realiza con la siguiente configuración:
+\begin{verbatim}    
+model.compile(
+    optimizer=keras.optimizers.Adam(learning_rate=init_learning_rate),
+    loss='categorical_crossentropy',
+    metrics=['accuracy'],
+)
+\end{verbatim}
+
+\begin{description}
+    \item[Optimizer=Adam] Es el algoritmo que se usa para actualizar los pesos del modelo. En clase y en el tp de redes neuronales nosotros usabamos el optimizador SGD(Stochastic Gradient Descent), Adam presenta muchas mejoras sobre SGD(como learning rate y momentum adapatativo) y es bastante utilizado al entrenar redes neuronales. Con el optimizador tambien configuramos el learning rate inicial, tipicamente probabamos los valores 0.1, 0.01 y 0.001.
+    \item[loss] La función de perdida que la red neuronal intenta minimizar, como dijimos antes, usamos Categorical Crossentropy.
+    \item[metrics] Las metricas que calcula el modelo en cada epoca, en este caso usamos accuracy.  
+\end{description}
+
+Cuando hacemos fine tunnig del modelo, descongelamos una serie de capas de InceptionV3 y entrenamos usando un learning rate más bajo, al inicio usabamos un learning rate de 1e-5.
+
+\subsection{Primeros problemas}
+
+.Llegamos a un modelo que posee el siguiente accuracy:
 
 \begin{itemize}
     \item Accuracy Train: Superior al 80\%
-    \item Accuracy Validation: Entorno al 50\%
-    \item Accuracy Test: Entorno al 20\%
+    \item Accuracy Validation: En torno al 50\%
+    \item Accuracy Test: En torno al 20\%
 \end{itemize}
 
 Donde claramente se ve que ocurre (muy notablemente) overfitting. Ademas, cuando lo queríamos probar para ver si al menos clasificaba bien los ejemplos del train este los clasificaba casi siempre mal.\\
 
 \subsection{Primera Solución}
-Entonces como primer medida pensamos que el modelo podría clasificar mal las imágenes debido a que estas eran muy poco \say{claras}, debido a que eran de poca resolución y las manos eran un poco \say{particulares}. Sumándole el hecho de que hay algunos \say{sellos} muy parecidos, llegamos a una primera conclusion de que estos factores hacían que el modelo no aprendiese bien.
+Entonces como primer medida pensamos que el modelo podría clasificar mal las imágenes debido a que estas eran muy poco \say{claras}, debido a que eran de poca resolución y las manos eran un poco \say{particulares}. Sumándole el hecho de que hay algunos \say{sellos} muy parecidos (ejemplo, el sello del carnero y el sello del tigre), llegamos a una primera conclusión de que estos factores hacían que el modelo no aprendiese bien.
 
-Entonces como primera solución que aplicamos fue ampliar el dataset, con otros dataset, con manos diferentes al que teníamos, mas el agregado de imágenes que sacamos de este canal de youtube \cite{CanalOtaku}
+Entonces como primera solución que aplicamos fue ampliar el dataset, con otros dataset, con manos diferentes al que teníamos, más el agregado de imágenes que sacamos de este canal de youtube \cite{CanalOtaku}
 el cual hace lo gestos con diferentes atuendos, dándonos el agregado de variedad que necesitábamos.\\
 
 \section{Continúan los problemas}
@@ -76,11 +171,11 @@ el cual hace lo gestos con diferentes atuendos, dándonos el agregado de varieda
 A pesar de haber agregado mas ejemplos y que haya mas variedad seguiamos teniendo overfitting. Era mucho menor teniendo los siguiente resultados para el train y test:
 
 \begin{itemize}
-    \item Accuracy Train: Entorno al 90%
-    \item Accuracy Test: Entorno al 60%
+    \item Accuracy Train: En torno al 90%
+    \item Accuracy Test: En torno al 60%
 \end{itemize}
 
-Ademas seguíamos teniendo el problema de que al probar con ejemplos del train, que deberían dar casi siempre bien por el alto accuracy, las clasificaba mal.
+Además seguíamos teniendo el problema de que al probar con ejemplos del train, que deberían dar casi siempre bien por el alto accuracy, las clasificaba mal.
 
 \subsection{Segunda solución}
 Pensamos y aplicamos muchas soluciones, esta por separado no fueron muy útiles (mejoraban ligeramente) pero fue cuando las combinamos que se noto un poco mas la mejora; estas fueron:

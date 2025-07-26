@@ -3,3 +3,7 @@
 
 # No subir el dataset
 dataset
+dataset del chino
+
+*.keras
+*.h5
