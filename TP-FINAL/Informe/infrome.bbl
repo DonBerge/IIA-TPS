@@ -1,13 +1,31 @@
 \begin{thebibliography}{1}
 
 \bibitem{Paginakeras}
-fchollet.
-\newblock Transfer learning and fine-tuning.
-\newblock \url {https://keras.io/guides/transfer_learning}.
+Keras (fchollet).
+\newblock Transfer learning and fine-tuning, 2024.
+\newblock \url{https://keras.io/guides/transfer_learning}.
+
+\bibitem{CategoricalCrossentropy}
+TensorFlow.
+\newblock Tensorflow: Categorical crossentropy, 2024.
+\newblock
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy#args}.
 
 \bibitem{CanalOtaku}
 K.E.N-DIGIT~/ Hokage.
-\newblock Canal de youtube sobre los sellos.
-\newblock \url {https://www.youtube.com/@degidoga}.
+\newblock Canal de youtube sobre los sellos, 2024.
+\newblock \url{https://www.youtube.com/@degidoga}.
+
+\bibitem{CategoricalFocal}
+TensorFlow.
+\newblock Tensorflow: Categorical focal crossentropy, 2024.
+\newblock
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
+
+\bibitem{Categorical}
+Raúl Gómez.
+\newblock Understanding categorical cross-entropy loss, 2024.
+\newblock
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
 
 \end{thebibliography}
