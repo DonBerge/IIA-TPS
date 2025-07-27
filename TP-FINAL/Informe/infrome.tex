@@ -166,8 +166,7 @@ Entonces como primer medida pensamos que el modelo podría clasificar mal las im
 Entonces como primera solución que aplicamos fue ampliar el dataset, con otros dataset, con manos diferentes al que teníamos, más el agregado de imágenes que sacamos de este canal de youtube \cite{CanalOtaku}
 el cual hace lo gestos con diferentes atuendos, dándonos el agregado de variedad que necesitábamos.\\
 
-\section{Continúan los problemas}
-\subsection{Continua el problema}
+\section{Continúan los problemas}¡
 A pesar de haber agregado mas ejemplos y que haya mas variedad seguiamos teniendo overfitting. Era mucho menor teniendo los siguiente resultados para el train y test:
 
 \begin{itemize}
@@ -247,18 +246,20 @@ Donde $N$ es el número de ejemplos en el batch, $C$ es el número de clases. Es
     \end{array}
 \]
 
-Donde $\boldsymbol{\alpha}$ es un factor de balanceo, el cual puede ser ajustado para darle más peso a ciertas clases por sobre otras, generalmente se define como el inverso de la frecuencia de la clase en el dataset para paliar el problema del desbalanceo de clases. Nosotros no usamos este factor asi que dejamos para todas las clases el valor por defecto ($0.25$).
+Donde $\boldsymbol{\alpha}$ es un factor de balanceo, el cual puede ser ajustado para darle más peso a ciertas clases por sobre otras, generalmente se define como el inverso de la frecuencia de la clase en el dataset para paliar el problema del desbalanceo de clases. Nosotros no usamos este factor asi que dejamos para todas las clases $\boldsymbol{\alpha=0.25}$.
 
-El parámetro $\boldsymbol{\gamma}$ es un factor de modulación, la idea del termino $(1-p_t)^\gamma$ es hacer que las clases que son más dificiles de clasificar tengan un mayor peso en la función de error y aquellas clases que son más faciles de clasificar tengan un menor peso en el error. 
+El parámetro $\boldsymbol{\gamma}$ es un factor de modulación, la idea del termino $(1-p_t)^\gamma$ es hacer que las clases que son más dificiles de clasificar tengan un mayor peso en la función de error y aquellas clases que son más faciles de clasificar tengan un menor peso en el error. En el entrenamiento del modelo usabamos $\boldsymbol{\gamma=2}$. 
 
 Si $\gamma=0$ y $\alpha=1$, CFCE es igual a CCE. Creiamos que aplicar esta función de error podria hacer que el modelo se enfoque más en aquellas clases que siempre eran clasificadas mal y que por lo tanto bajaban el test accuracy del modelo.
 
-\begin{itemize}
-    \item Una cosa que sacamos fue le dropout al momento de crear el modelo. Si bien la idea del dropout es perturbar el modelo en cada iteración de entrenamiento para que puede aprender de otras formas los conceptos, vimos que en nuestro caso es contraproducente porque ... (COMPLETAR)
-    \item También agregamos la función de que corte el entrenamiento luego de cierto tiempo. Si bien usamos el $StopErlay$ para que corte ante si no hay una mejora, a veces esta mejora era muy ínfima y hacia que el modelo tarde mucho. \\
-    Al cortarlo antes nos aramos tener que esperar de mas por una mejora del menos del 1\% en los accuracy.\\
-    Esto fue mas que nada para poder probar un poco mas de vece y evitar que la computadora se muera en el proceso.
-\end{itemize}
+\subsection{Otros cambios}
+
+Una cosa que sacamos fue el dropout al momento de crear el modelo. Si bien la idea del dropout es perturbar el modelo en cada iteración de entrenamiento para que puede aprender de otras formas los conceptos, en estas instancias del tp tratabamos de hacer que las curvas de entrenamiento sean mas \say{suaves} y que no tengan picos. El dropout causaba que las curvas tengan picos aunque bajasemos el learning rate, por lo que decidimos sacarlo.\\
+
+También agregamos al entrenamiento un nuevo callback que cortara el entrenamiento si el mismo tardaba más de un cierto tiempo (30 minutos tanto para el entrenamiento inicial como el finetunnig). Si bien esto podría ser similar a lo que hace el EarlyStopping, este callback utiliza el tiempo de entrenamiento como criterio de parada, mientras que EarlyStopping corta si el accuracy no mejora en un número determinado de épocas.
+
+Esto fue mas que nada para poder probar un poco más de veces y evitar que la computadora se muera en el proceso.
+
 
 Luego de realizar estos cambios el modelo tenia un accuracy de train mayor al 90\% y un accuracy de train mayor al 80\%, y ahora al probarlo clasificaba bien los ejemplo cuando los probábamos nosotros.
 

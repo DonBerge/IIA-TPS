@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex infrome"] 0 "infrome.aux" "infrome.bbl" "infrome" 1753579698.31057 -1
+["bibtex infrome"] 1753590881.32943 "infrome.aux" "infrome.bbl" "infrome" 1753590882.89908 0
   "./lib.bib" 1753507204.26029 334 a10eb87ab51c75d6a2a8fc9fb1de6e69 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "infrome.aux" 1753579698.17458 2970 98436c778f108ebfa0b65588411fa03c "pdflatex"
+  "infrome.aux" 1753590882.75256 2964 ae572b845dbbd5b535d51e8f144501ad "pdflatex"
   (generated)
   "infrome.bbl"
   "infrome.blg"
   (rewritten before read)
-["pdflatex"] 1753579696.86575 "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" "infrome.pdf" "infrome" 1753579698.311 0
+["pdflatex"] 1753590881.38005 "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" "infrome.pdf" "infrome" 1753590882.89942 0
   "/home/don-berge/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1745678823.57483 14040 19619b7cfa4564aecb7372d032410fed ""
-  "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" 1753579696.5485 18025 d1334d8cd03a40890ec92a22cb52afd7 ""
+  "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" 1753590879.46679 18294 3b56a6d4520ad39e990b10e6e85b6fb3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -139,10 +139,10 @@
   "Imagenes/bird_inception_plano.png" 1753510945.65308 567570 01c13d8fcfe7dec8e871fabef76dcd07 ""
   "Imagenes/ox_inception_plano.png" 1753510910.31734 606204 aa9abdbb7b76fb29e80eca3c76ad322e ""
   "Imagenes/tiger_inception_plano.png" 1753510851.37696 553480 73f64240aeaafc9eb60944c3e62120f1 ""
-  "infrome.aux" 1753579698.17458 2970 98436c778f108ebfa0b65588411fa03c "pdflatex"
-  "infrome.bbl" 1753577198.45879 329 90b5ba9c398a416644124add18ab332a "bibtex infrome"
-  "infrome.out" 1753579698.1768 2152 dafecf5bff91d61df21367985133de0d "pdflatex"
-  "infrome.tex" 1753579696.5485 18025 d1334d8cd03a40890ec92a22cb52afd7 ""
+  "infrome.aux" 1753590882.75256 2964 ae572b845dbbd5b535d51e8f144501ad "pdflatex"
+  "infrome.bbl" 1753590881.36778 329 90b5ba9c398a416644124add18ab332a "bibtex infrome"
+  "infrome.out" 1753590882.75478 2114 e884aad05c3e57c42ff5ece85f6a2378 "pdflatex"
+  "infrome.tex" 1753590879.46679 18294 3b56a6d4520ad39e990b10e6e85b6fb3 ""
   (generated)
   "infrome.aux"
   "infrome.log"
