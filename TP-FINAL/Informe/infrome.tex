@@ -1,4 +1,4 @@
-\documentclass[12pt, titlepage, a4paper]{article}
+\documentclass[tp]{lcc}
 \usepackage[utf8]{inputenc}
 \usepackage{changepage}
 \usepackage{prftree}
@@ -33,11 +33,11 @@
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
-\usepackage[a4paper, total={6in, 8in}]{geometry}
-
-
-\title{Trabajo Práctico Final\\ Inteligencia Artificial}
-\author{Agustín Fernández Bergé y Ramiro Gatto}
+%\title{Trabajo Práctico Final\\ Inteligencia Artificial}
+%\author{Agustín Fernández Bergé y Ramiro Gatto}
+\materia{Introducción a la Inteligencia Artificial}
+\titulo{Clasificación de Sellos del Anime Naruto con InceptionV3}
+\subtitulo{Agustín Fernández Bergé y Ramiro Gatto}
 
 \begin{document}
 \maketitle
@@ -80,7 +80,7 @@ Lo primero que hicimos fue leer el materia subido en la pagina de Keras sobre tr
 \begin{enumerate}
     \item Cargar los datasets de entrenamiento, validación y test.
     \item Aplicar el preprocesamiento correspondiente para que el modelo pueda trabajar con las imágenes. En el caso de InceptionV3, el preprocesamiento consiste en redimensionar las imagenes a un tamaño común y normalizar los valores de los píxeles a valores del conjunto [-1,1].
-    \item Aplicar data augmentation a los datasets de entrenamiento y validación(este paso inicialmente lo saltamos).
+    \item Aplicar data augmentation a los datasets de entrenamiento y validación (este paso inicialmente lo saltamos).
     \item Construir las capas del modelo, dejando la capa de InceptionV3 congelada (es decir, sin entrenar) y agregando una capa densa al final para la clasificación.
     \item Compilar el modelo, esto es, definir la función de loss, el optimizador y las métricas a utilizar.
     \item Entrenar el modelo una cantidad determinada de epocas.
@@ -268,5 +268,7 @@ Luego de realizar estos cambios el modelo tenia un accuracy de train mayor al 90
 \bibliographystyle{unsrt}
 \bibliography{lib}
 
+% Example citation to ensure at least one citation is present
+% \cite{Paginakeras}
 
 \end{document}
