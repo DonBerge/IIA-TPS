@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.10)  26 JUL 2025 04:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.10)  26 JUL 2025 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -531,12 +531,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Imagenes/Sellos_Basicos.png, id=63, 468.75125pt x 508.90125pt>
+<Imagenes/Sellos_Basicos.png, id=67, 468.75125pt x 508.90125pt>
 File: Imagenes/Sellos_Basicos.png Graphic file (type png)
 <use Imagenes/Sellos_Basicos.png>
 Package pdftex.def Info: Imagenes/Sellos_Basicos.png  used on input line 50.
 (pdftex.def)             Requested size: 216.81pt x 235.37868pt.
-<Imagenes/tiger_inception_plano.png, id=64, 1594.95876pt x 524.96124pt>
+<Imagenes/tiger_inception_plano.png, id=68, 1594.95876pt x 524.96124pt>
 File: Imagenes/tiger_inception_plano.png Graphic file (type png)
 <use Imagenes/tiger_inception_plano.png>
 Package pdftex.def Info: Imagenes/tiger_inception_plano.png  used on input line 60.
@@ -554,12 +554,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.63 
       <./Imagenes/Sellos_Basicos.png>]
-<Imagenes/ox_inception_plano.png, id=71, 1594.95876pt x 524.96124pt>
+<Imagenes/ox_inception_plano.png, id=75, 1594.95876pt x 524.96124pt>
 File: Imagenes/ox_inception_plano.png Graphic file (type png)
 <use Imagenes/ox_inception_plano.png>
 Package pdftex.def Info: Imagenes/ox_inception_plano.png  used on input line 66.
 (pdftex.def)             Requested size: 390.25534pt x 128.4444pt.
-<Imagenes/bird_inception_plano.png, id=72, 1594.95876pt x 522.95375pt>
+<Imagenes/bird_inception_plano.png, id=76, 1594.95876pt x 522.95375pt>
 File: Imagenes/bird_inception_plano.png Graphic file (type png)
 <use Imagenes/bird_inception_plano.png>
 Package pdftex.def Info: Imagenes/bird_inception_plano.png  used on input line 72.
@@ -598,9 +598,13 @@ l.132 \end{description}
 
 [7]
 
-[8] (./infrome.bbl)
+[8]
 
-[9] (./infrome.aux
+[9]
+
+[10] (./infrome.bbl)
+
+[11] (./infrome.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -609,21 +613,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
 Package rerunfilecheck Info: File `infrome.out' has not changed.
-(rerunfilecheck)             Checksum: 31C36DAD172FC4A3E2C69A0191CD5EE2;1928.
+(rerunfilecheck)             Checksum: DAFECF5BFF91D61DF21367985133DE0D;2152.
  ) 
 Here is how much of TeX's memory you used:
- 14468 strings out of 471098
- 225929 string characters out of 5507369
- 633628 words of memory out of 5000000
- 40810 multiletter control sequences out of 15000+600000
+ 14480 strings out of 471098
+ 226200 string characters out of 5507369
+ 633636 words of memory out of 5000000
+ 40819 multiletter control sequences out of 15000+600000
  641010 words of font info for 92 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,10n,79p,801b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/don-berge/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on infrome.pdf (10 pages, 1728679 bytes).
+ 75i,14n,79p,644b,628s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/don-berge/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on infrome.pdf (12 pages, 1772930 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

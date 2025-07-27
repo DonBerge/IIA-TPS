@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex infrome"] 1753514197.33565 "infrome.aux" "infrome.bbl" "infrome" 1753514228.04607 0
+["bibtex infrome"] 0 "infrome.aux" "infrome.bbl" "infrome" 1753579698.31057 -1
   "./lib.bib" 1753507204.26029 334 a10eb87ab51c75d6a2a8fc9fb1de6e69 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "infrome.aux" 1753514227.85458 2823 1d24ae792c425122a51fa821eb69e2b6 "pdflatex"
+  "infrome.aux" 1753579698.17458 2970 98436c778f108ebfa0b65588411fa03c "pdflatex"
   (generated)
   "infrome.bbl"
   "infrome.blg"
   (rewritten before read)
-["pdflatex"] 1753514225.80541 "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" "infrome.pdf" "infrome" 1753514228.0464 0
+["pdflatex"] 1753579696.86575 "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" "infrome.pdf" "infrome" 1753579698.311 0
   "/home/don-berge/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1745678823.57483 14040 19619b7cfa4564aecb7372d032410fed ""
-  "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" 1753514225.41825 14838 7ffaadb850cb75ed189317d4586f98c7 ""
+  "/home/don-berge/Documentos/IIA-TPS/TP-FINAL/Informe/infrome.tex" 1753579696.5485 18025 d1334d8cd03a40890ec92a22cb52afd7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -43,9 +43,14 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1248133631 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -134,10 +139,10 @@
   "Imagenes/bird_inception_plano.png" 1753510945.65308 567570 01c13d8fcfe7dec8e871fabef76dcd07 ""
   "Imagenes/ox_inception_plano.png" 1753510910.31734 606204 aa9abdbb7b76fb29e80eca3c76ad322e ""
   "Imagenes/tiger_inception_plano.png" 1753510851.37696 553480 73f64240aeaafc9eb60944c3e62120f1 ""
-  "infrome.aux" 1753514227.85458 2823 1d24ae792c425122a51fa821eb69e2b6 "pdflatex"
-  "infrome.bbl" 1753514197.37691 329 90b5ba9c398a416644124add18ab332a "bibtex infrome"
-  "infrome.out" 1753514227.85758 1928 31c36dad172fc4a3e2c69a0191cd5ee2 "pdflatex"
-  "infrome.tex" 1753514225.41825 14838 7ffaadb850cb75ed189317d4586f98c7 ""
+  "infrome.aux" 1753579698.17458 2970 98436c778f108ebfa0b65588411fa03c "pdflatex"
+  "infrome.bbl" 1753577198.45879 329 90b5ba9c398a416644124add18ab332a "bibtex infrome"
+  "infrome.out" 1753579698.1768 2152 dafecf5bff91d61df21367985133de0d "pdflatex"
+  "infrome.tex" 1753579696.5485 18025 d1334d8cd03a40890ec92a22cb52afd7 ""
   (generated)
   "infrome.aux"
   "infrome.log"
