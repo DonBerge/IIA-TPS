@@ -186,7 +186,6 @@ Pensamos y aplicamos muchas soluciones, esta por separado no fueron muy útiles 
         \item Rotaciones de imágenes.
         \item Traslaciones horizontales y verticales.
         \item Zooms.
-        \item Cizallamientos (transformación que distorsiona la imagen, como si se estirara en una dirección).
         \item Flip horizontal.
     \end{itemize}
     Para aplicar data augmentation usamos la clase ImageDataGenerator de Keras, la cual nos permite aplicar estas transformaciones de manera aleatoria a las imágenes del dataset en cada época del entrenamiento.
@@ -265,7 +264,13 @@ Una cosa que sacamos fue el dropout al momento de crear el modelo. Si bien la id
 
 También agregamos al entrenamiento un nuevo callback que cortara el entrenamiento si el mismo tardaba más de un cierto tiempo (30 minutos tanto para el entrenamiento inicial como el fine-tunnig). Si bien esto podría ser similar a lo que hace el EarlyStopping, este callback utiliza el tiempo de entrenamiento como criterio de parada, mientras que EarlyStopping corta si el accuracy no mejora en un número determinado de épocas. Esto fue mas que nada para poder probar un poco más de veces y evitar que la computadora se muera en el proceso.\\
 
-Luego de realizar estos cambios el modelo tenia un accuracy de train mayor al 90\% y un accuracy de train mayor al 80\%, y ahora al probarlo clasificaba bien los ejemplo cuando los probábamos nosotros.
+Luego de realizar estos cambios el modelo tenia un accuracy de test mayor al 90\% y un accuracy de train mayor al 80\%, y ahora al probarlo clasificaba bien los ejemplo cuando los probábamos nosotros.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagenes/curvafinal.png}
+    \caption{Curvas de entrenamiento obtenidas con el modelo final}
+\end{figure}
 
 \newpage
 
