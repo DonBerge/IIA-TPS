@@ -8,8 +8,7 @@ Keras (fchollet).
 \bibitem{CategoricalCrossentropy}
 TensorFlow.
 \newblock Tensorflow: Categorical crossentropy, 2024.
-\newblock
-  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy#args}.
+\newblock \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy#args}.
 
 \bibitem{CanalOtaku}
 K.E.N-DIGIT~/ Hokage.
@@ -19,13 +18,11 @@ K.E.N-DIGIT~/ Hokage.
 \bibitem{CategoricalFocal}
 TensorFlow.
 \newblock Tensorflow: Categorical focal crossentropy, 2024.
-\newblock
-  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
+\newblock \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
 
 \bibitem{Categorical}
 Raúl Gómez.
 \newblock Understanding categorical cross-entropy loss, 2024.
-\newblock
-  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
+\newblock \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
 
 \end{thebibliography}
