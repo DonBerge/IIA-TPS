@@ -18,7 +18,8 @@ def translate_sign(sign):
         'Horse': 'horse',
         'Dragon': 'dragon',
         'Ox': 'ox',
-        'Rabbit': 'hare'
+        'Rabbit': 'hare',
+        'Serpent': 'snake',
     }
     return translations.get(sign, None)
 
