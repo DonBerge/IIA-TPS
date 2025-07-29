@@ -2,27 +2,36 @@
 
 \bibitem{Paginakeras}
 Keras (fchollet).
-\newblock Transfer learning and fine-tuning, 2024.
+\newblock Transfer learning and fine-tuning.
 \newblock \url{https://keras.io/guides/transfer_learning}.
 
 \bibitem{CategoricalCrossentropy}
 TensorFlow.
-\newblock Tensorflow: Categorical crossentropy, 2024.
-\newblock \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy#args}.
+\newblock Tensorflow: Categorical crossentropy.
+\newblock
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalCrossentropy#args}.
 
 \bibitem{CanalOtaku}
 K.E.N-DIGIT~/ Hokage.
-\newblock Canal de youtube sobre los sellos, 2024.
+\newblock Canal de youtube sobre los sellos.
 \newblock \url{https://www.youtube.com/@degidoga}.
 
 \bibitem{CategoricalFocal}
 TensorFlow.
-\newblock Tensorflow: Categorical focal crossentropy, 2024.
-\newblock \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
+\newblock Tensorflow: Categorical focal crossentropy.
+\newblock
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
 
 \bibitem{Categorical}
 Raúl Gómez.
-\newblock Understanding categorical cross-entropy loss, 2024.
-\newblock \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
+\newblock Understanding categorical cross-entropy loss.
+\newblock
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/losses/CategoricalFocalCrossentropy#args}.
+
+\bibitem{listaJustu}
+Giles O'Regan.
+\newblock Lista de algunos jutsus.
+\newblock
+  \url{https://es.scribd.com/doc/59972673/Naruto-Jutsus-With-Hand-Signs}.
 
 \end{thebibliography}

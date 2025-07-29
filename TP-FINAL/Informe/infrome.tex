@@ -58,7 +58,7 @@ La idea principal del proyecto es usar InceptionV3 para poder clasificar los dis
 Para el proyecto se utilizaron 3 dataset de proyectos similares (primero empezamos con uno y lo fuimos ampliando), más una cuantas imágenes que agregamos para que este sea un poco más variado.\\
 
 \section{Primer acercamiento}
-Para empezar lo que decidimos hacer fue crear un modelo que clasifique los gesto de las manos con los sellos correspondientes. Entonces como experiencia inicial quisimos probar como clasificaba InceptionV3 usando los pesos de Imagenet las imágenes del dataset, para ver en que categorías clasificaba cada sello.\\ 
+Para empezar lo que decidimos hacer fue crear un modelo que clasifique los los sellos de forma correcta. Entonces como experiencia inicial quisimos probar como clasificaba InceptionV3 usando los pesos de Imagenet las imágenes del dataset, para ver en que categorías clasificaba cada sello.\\ 
 
 A realizar esto nos dimos cuenta que en algunos sellos una clase se activaba mucho más que las otras, mientras que para otros sellos 3 o 5 clases eran las que mas se activaban respecto a otras. Aquí hay un ejemplo para varios sellos:
 \begin{figure}[H]
@@ -275,13 +275,13 @@ También agregamos al entrenamiento un nuevo callback que cortara el entrenamien
 Luego de realizar estos cambios el modelo tenia un accuracy de test mayor al 90\% y un accuracy de train mayor al 80\%, y ahora al probarlo clasificaba bien los ejemplo cuando los probábamos nosotros.
 
 \section{Parte final}
-Luego de crear el modelo bien lo que seria la parte simple del proyecto (que ya se aleja de la idea de Inteligencia Artificial), que seria darle al modelo una secuencia de sellos y que diga cual es. Para esto los que hicimos fue, usando la libreria OpenCV, sacar capturas de imagen desde la camara web y clasificarlas usando nuestro modelo para detectar sellos. Dado que las capturas se tomaban en tiempo real, para decidir si un sello se habia formado o no hacia falta analizar una serie de frames(entre 5 o 10) y si en todos esos frames se detectaba el mismo sello, entonces se consideraba que ese sello se había formado.\\
+Luego de crear el modelo viene lo que seria la parte simple del proyecto (que ya se aleja de la idea de Inteligencia Artificial), que seria darle al modelo una secuencia de sellos y que diga cual jutsu es. Para esto los que hicimos fue, usando la librería OpenCV, sacar capturas de imagen desde la cámara web y clasificarlas usando nuestro modelo para detectar sellos. Dado que las capturas se tomaban en tiempo real, para decidir si un sello se había formado o no hacia falta analizar una serie de frames (entre 5 o 10) y si en todos esos frames se detectaba el mismo sello, entonces se consideraba que ese sello se había formado.\\
 
-A su vez decidimos meter un porcentaje de confianza, si el modelo no detectaba un sello con una probabilidad mayor al 60\% entonces se considera que no se formo ningún sello. Esto se hizo para evitar que el modelo tome como un frame valido una transicion entre sellos o un frame donde no se ve bien el sello.\\
+A su vez decidimos meter un porcentaje de confianza, si el modelo no detectaba un sello con una probabilidad mayor al 60\% entonces se considera que no se formo ningún sello. Esto se hizo para evitar que el modelo tome como un frame valido una transición entre sellos o un frame donde no se ve bien el sello.\\
 
-Con esto podemos detectar secuencias de sellos desde la camara web, para detectar a que nombre de secuencia corresponde tenemos una lista predefinida de secuencias de sellos y sus nombres en el archivo \texttt{jutsus/jutsus.json}, el cual es un archivo JSON que contiene una lista de secuencias de sellos y sus nombres.\\
+Con esto podemos detectar secuencias de sellos desde la cámara web, para detectar a que nombre de secuencia corresponde tenemos una lista predefinida de secuencias de sellos y sus nombres en el archivo \texttt{jutsus/jutsus.json}, el cual es un archivo JSON que contiene una lista de secuencias de sellos y sus nombres.\\
 
-Esta lista de secuencias de sellos no viene de ningún dataset sino que fue información recopilada por nosotros desde distintos libros con infromación o la wiki de Naruto.
+Esta lista de secuencias de sellos no viene de ningún dataset sino que fue información recopilada por nosotros desde distintos libros con información o la wiki de Naruto (una de las fuentes es \cite{listaJustu}).
 
 
 
