@@ -47,7 +47,7 @@
 \maketitle
 
 \section{Introducción}
-La idea principal del proyecto es usar InceptionV3 para poder clasificar los distintos \say{sellos} (gestos con las manos) del anime de Naruto. Para hacer esto hicimos transfer learning sobre el modelo de InceptionV3 más un fine-tunning de las ultimas capas del modelo.\\
+La idea principal del proyecto es usar InceptionV3 para poder clasificar los distintos \say{sellos} (gestos con las manos) del anime de Naruto, y luego poder determinar que \say{jutsu} se formo (combinación de sellos). Para hacer esto hicimos transfer learning sobre el modelo de InceptionV3 más un fine-tunning de las ultimas capas del modelo.\\
 
 \begin{figure}[h]
     \centering
@@ -58,7 +58,9 @@ La idea principal del proyecto es usar InceptionV3 para poder clasificar los dis
 Para el proyecto se utilizaron 3 dataset de proyectos similares (primero empezamos con uno y lo fuimos ampliando), más una cuantas imágenes que agregamos para que este sea un poco más variado.\\
 
 \section{Primer acercamiento}
-Como experiencia inicial quisimos probar como clasificaba InceptionV3 usando los pesos de Imagenet las imágenes del dataset, para ver en que categorías clasificaba cada sello. AL realizar esto nos dimos cuenta que en algunos sellos una clase se activaba mucho más que las otras, mientras que para otros sellos 3 o 5 clases eran las que mas se activaban respecto a otras. Aquí hay un ejemplo para varios sellos:
+Para empezar lo que decidimos hacer fue crear un modelo que clasifique los gesto de las manos con los sellos correspondientes. Entonces como experiencia inicial quisimos probar como clasificaba InceptionV3 usando los pesos de Imagenet las imágenes del dataset, para ver en que categorías clasificaba cada sello.\\ 
+
+A realizar esto nos dimos cuenta que en algunos sellos una clase se activaba mucho más que las otras, mientras que para otros sellos 3 o 5 clases eran las que mas se activaban respecto a otras. Aquí hay un ejemplo para varios sellos:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{Imagenes/tiger_inception_plano.png}
@@ -262,15 +264,28 @@ Si $\gamma=0$ y $\alpha=1$, CFCE es igual a CCE. Creíamos que aplicar esta func
 
 Una cosa que sacamos fue el dropout al momento de crear el modelo. Si bien la idea del dropout es perturbar el modelo en cada iteración de entrenamiento para que puede aprender de otras formas los conceptos, en estas instancias del tp tratábamos de hacer que las curvas de entrenamiento sean mas \say{suaves} y que no tengan picos. El dropout causaba que las curvas tengan picos aunque bajásemos el learning rate, por lo que decidimos sacarlo.\\
 
-También agregamos al entrenamiento un nuevo callback que cortara el entrenamiento si el mismo tardaba más de un cierto tiempo (30 minutos tanto para el entrenamiento inicial como el fine-tunnig). Si bien esto podría ser similar a lo que hace el EarlyStopping, este callback utiliza el tiempo de entrenamiento como criterio de parada, mientras que EarlyStopping corta si el accuracy no mejora en un número determinado de épocas. Esto fue mas que nada para poder probar un poco más de veces y evitar que la computadora se muera en el proceso.\\
-
-Luego de realizar estos cambios el modelo tenia un accuracy de test mayor al 90\% y un accuracy de train mayor al 80\%, y ahora al probarlo clasificaba bien los ejemplo cuando los probábamos nosotros.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Imagenes/curvafinal.png}
     \caption{Curvas de entrenamiento obtenidas con el modelo final}
 \end{figure}
+
+También agregamos al entrenamiento un nuevo callback que cortara el entrenamiento si el mismo tardaba más de un cierto tiempo (30 minutos tanto para el entrenamiento inicial como el fine-tunning). Si bien esto podría ser similar a lo que hace el EarlyStopping, este callback utiliza el tiempo de entrenamiento como criterio de parada, mientras que EarlyStopping corta si el accuracy no mejora en un número determinado de épocas. Esto fue mas que nada para poder probar un poco más de veces y evitar que la computadora se muera en el proceso.\\
+
+Luego de realizar estos cambios el modelo tenia un accuracy de test mayor al 90\% y un accuracy de train mayor al 80\%, y ahora al probarlo clasificaba bien los ejemplo cuando los probábamos nosotros.
+
+\section{Parte final}
+Luego de crear el modelo bien lo que seria la parte simple del proyecto (que ya se aleja de la idea de Inteligencia Artificial), que seria darle al modelo una secuencia de sellos y que diga cual es. Para esto los que hicimos fue, usando la libreria cv, que se vayan tomando frames, se vaya guardando los sellos correspondientes y que diga cual formo.\\
+
+Para esto no hay un \say{dataset}, lo que tuvimos que hacer fue ir buscando por libros con información o la wiki los diferentes jutsu que existen.
+
+
+
+
+
+
+
+
 
 \newpage
 

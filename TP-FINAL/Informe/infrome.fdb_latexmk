@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex infrome"] 1753646831.04399 "infrome.aux" "infrome.bbl" "infrome" 1753646839.73616 0
-  "./lib.bib" 1753646830 1225 72492bc92638ff90b2c45886b8e740bd ""
+["bibtex infrome"] 1753826661.31418 "infrome.aux" "infrome.bbl" "infrome" 1753826666.27301 0
+  "./lib.bib" 1753825923 1225 72492bc92638ff90b2c45886b8e740bd ""
   "C:/Users/Ramiro/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "infrome.aux" 1753646838 3217 a011d4f7a863470349c8862d5514fb36 "pdflatex"
+  "infrome.aux" 1753826664 3491 c66537bad26d95dc35c82d214d2c1d56 "pdflatex"
   (generated)
   "infrome.bbl"
   "infrome.blg"
   (rewritten before read)
-["pdflatex"] 1753646831.5234 "c:/Users/Ramiro/Desktop/Inteligencia Artigicial/TPs/IIA-TPS/TP-FINAL/Informe/infrome.tex" "infrome.pdf" "infrome" 1753646839.73686 0
+["pdflatex"] 1753826661.95985 "c:/Users/Ramiro/Desktop/Inteligencia Artigicial/TPs/IIA-TPS/TP-FINAL/Informe/infrome.tex" "infrome.pdf" "infrome" 1753826666.27374 0
   "C:/Users/Ramiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1753646837 121598 1013c855c04cea5e91dd5a6ac4229023 ""
   "C:/Users/Ramiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1725994593 14064 1546adc216da8020c017a4a700ee9bf2 ""
   "C:/Users/Ramiro/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725973176 24265805 ba274860b5af4f8fb0372ed395b15e4e ""
@@ -138,15 +138,16 @@
   "C:/Users/Ramiro/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/Ramiro/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/Ramiro/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "Imagenes/Sellos_Basicos.png" 1753453810 55713 481e9662c7ebcf1066cf53ad07e2d388 ""
-  "Imagenes/bird_inception_plano.png" 1753637865 567570 8ad09c3dbaa706e4c0915e9126cb7cba ""
-  "Imagenes/ox_inception_plano.png" 1753637865 606204 2c95e15f68dabec8c3feb1cea99b7178 ""
-  "Imagenes/tiger_inception_plano.png" 1753637865 553480 c6e8545fbb508adedd378aeac5606c7d ""
-  "c:/Users/Ramiro/Desktop/Inteligencia Artigicial/TPs/IIA-TPS/TP-FINAL/Informe/infrome.tex" 1753646830 18909 92d9ddc9c56844f3e194f528ac35dc57 ""
-  "infrome.aux" 1753646838 3217 a011d4f7a863470349c8862d5514fb36 "pdflatex"
-  "infrome.bbl" 1753646831 1009 0bb2707047765b7da7e639dc4d6f84f0 "bibtex infrome"
-  "infrome.out" 1753646838 2117 caa0e215e3d80b7dd6ee30436ceb5b6b "pdflatex"
-  "infrome.tex" 1753646830 18909 92d9ddc9c56844f3e194f528ac35dc57 ""
+  "Imagenes/Sellos_Basicos.png" 1753825923 55713 481e9662c7ebcf1066cf53ad07e2d388 ""
+  "Imagenes/bird_inception_plano.png" 1753825923 567570 8ad09c3dbaa706e4c0915e9126cb7cba ""
+  "Imagenes/curvafinal.png" 1753825931 102683 d10225f5a6763e585d1104e995519624 ""
+  "Imagenes/ox_inception_plano.png" 1753825923 606204 2c95e15f68dabec8c3feb1cea99b7178 ""
+  "Imagenes/tiger_inception_plano.png" 1753825923 553480 c6e8545fbb508adedd378aeac5606c7d ""
+  "c:/Users/Ramiro/Desktop/Inteligencia Artigicial/TPs/IIA-TPS/TP-FINAL/Informe/infrome.tex" 1753826655 19744 0d8a1dd500982d943bf54d6657cd563e ""
+  "infrome.aux" 1753826664 3491 c66537bad26d95dc35c82d214d2c1d56 "pdflatex"
+  "infrome.bbl" 1753826661 1009 0bb2707047765b7da7e639dc4d6f84f0 "bibtex infrome"
+  "infrome.out" 1753826664 2219 e24004ff970023aae4ef26c7ca5ff50e "pdflatex"
+  "infrome.tex" 1753826655 19744 0d8a1dd500982d943bf54d6657cd563e ""
   (generated)
   "infrome.aux"
   "infrome.log"
