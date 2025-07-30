@@ -1,319 +1,39 @@
 {
-  "Fire Element; Fire Dragon Missile": [
-    "tiger",
-    "dog",
-    "ox",
-    "hare",
-    "tiger"
-  ],
-  "Fire Element; Fire Dragon Flame Missile": [
-    "rat",
-    "horse",
-    "dragon",
-    "ox",
-    "tiger"
-  ],
-  "Fire Element; Grand Fireball Jutsu": [
-    "snake",
-    "tiger",
-    "monkey",
-    "boar",
-    "horse",
-    "tiger"
-  ],
-  "Fire Element; Dragon Fire Technique": [
-    "dragon",
-    "hare",
-    "tiger"
-  ],
-  "Fire Element; Flame Blowing": [
-    "snake",
-    "ram",
-    "monkey",
-    "boar",
-    "horse",
-    "tiger"
-  ],
-  "Fire Element; Toad Oil Fire Bullet": [
-    "snake",
-    "tiger",
-    "monkey",
-    "boar",
-    "horse",
-    "tiger"
-  ],
-  "Fire Element; Phoenix Jutsu": [
-    "snake",
-    "tiger",
-    "dog",
-    "ox",
-    "hare",
-    "tiger"
-  ],
-  "Fire Element; Phoenix Flower Jutsu": [
-    "rat",
-    "dog",
-    "ox",
-    "hare",
-    "tiger"
-  ],
-  "Fire Element; Blazing Fireball Jutsu": [
-    "snake",
-    "tiger",
-    "monkey",
-    "horse",
-    "tiger"
-  ],
-  "Fire Element; Flame Dragon Jutsu": [
-    "snake",
-    "tiger",
-    "dragon",
-    "hare",
-    "tiger"
-  ],
-  "Ice Element; Piercing Dragon Fierce Tiger": [
-    "tiger",
-    "boar",
-    "dog"
-  ],
-  "Ice Element; Double Black Dragon Blizzard": [
-    "rat",
-    "dragon",
-    "monkey",
-    "tiger",
-    "bird",
-    "horse",
-    "boar",
-    "dog"
-  ],
-  "Ice Element; Rouge Nature Jutsu": [
-    "snake",
-    "hare",
-    "dog"
-  ],
-  "Ice Element; Black Dragon Blizzard": [
-    "bird",
-    "snake",
-    "monkey",
-    "tiger",
-    "dog"
-  ],
-  "Earth Element; Earth Dragon Missile": [
-    "ram",
-    "horse",
-    "dragon"
-  ],
-  "Earth Element; Earth Landslide": [
-    "tiger"
-  ],
-  "Water Element; Water Dragon Bullet": [
-    "ox",
-    "tiger",
-    "ox",
-    "tiger"
-  ],
-  "Water Element; Water Wall": [
-    "tiger",
-    "tiger"
-  ],
-  "Water Element; Water Prison Jutsu": [
-    "ram",
-    "tiger",
-    "hare",
-    "dragon",
-    "hare"
-  ],
-  "Water Element; Water Vortex Jutsu": [
-    "tiger",
-    "ox",
-    "monkey",
-    "hare",
-    "ram",
-    "boar",
-    "ox",
-    "horse",
-    "monkey",
-    "tiger",
-    "dog",
-    "tiger",
-    "tiger",
-    "ox",
-    "monkey",
-    "hare",
-    "bird"
-  ],
-  "Water Element; Water Dragon Jutsu": [
-    "ox",
-    "monkey",
-    "hare",
-    "rat",
-    "boar",
-    "bird",
-    "ox",
-    "horse",
-    "bird",
-    "tiger",
-    "dog",
-    "tiger",
-    "snake",
-    "ox",
-    "ram",
-    "snake",
-    "ram",
-    "ox",
-    "monkey",
-    "bird",
-    "dragon",
-    "ox",
-    "horse",
-    "ram",
-    "tiger",
-    "snake",
-    "rat",
-    "ox",
-    "monkey",
-    "bird",
-    "rat",
-    "boar",
-    "monkey",
-    "dragon",
-    "bird",
-    "ox",
-    "horse",
-    "ram",
-    "tiger",
-    "snake",
-    "rat",
-    "monkey",
-    "hare",
-    "boar",
-    "dragon",
-    "ox",
-    "rat",
-    "ox",
-    "monkey",
-    "bird",
-    "rat",
-    "boar",
-    "bird"
-  ],
-  "Water Element; Black Rain": [
-    "tiger",
-    "snake",
-    "tiger"
-  ],
-  "Academy Ninja Clone Jutsu": [
-    "tiger",
-    "boar",
-    "ox",
-    "dog"
-  ],
-  "Academy Ninja Transformation Jutsu": [
-    "dog",
-    "boar",
-    "tiger"
-  ],
-  "A Thousand Years of Pain": [
-    "tiger"
-  ],
-  "Chidori": [
-    "ox",
-    "hare",
-    "monkey"
-  ],
-  "Chidori Level 2": [
-    "snake",
-    "dragon",
-    "horse",
-    "bird",
-    "dog",
-    "ox",
-    "hare",
-    "monkey"
-  ],
-  "Chidori Level 3": [
-    "dog",
-    "ox",
-    "hare"
-  ],
-  "Cursed Seal Jutsu": [
-    "hare",
-    "bird",
-    "snake",
-    "horse",
-    "monkey",
-    "horse",
-    "ram",
-    "rat"
-  ],
-  "Death God Summon": [
-    "snake",
-    "boar",
-    "ram",
-    "hare",
-    "dog",
-    "rat",
-    "bird",
-    "horse",
-    "snake"
-  ],
-  "Demonic Illusion; Hell Decent Jutsu": [
-    "boar",
-    "dog",
-    "bird",
-    "monkey",
-    "ram"
-  ],
-  "Reversal Jutsu": [
-    "dog",
-    "snake",
-    "bird",
-    "tiger"
-  ],
-  "Sakura's Clone Jutsu": [
-    "tiger",
-    "ox",
-    "dog"
-  ],
-  "Shadow Clone": [
-    "tiger"
-  ],
-  "Substitution Jutsu": [
-    "tiger",
-    "boar",
-    "ox",
-    "snake"
-  ],
-  "Summon Dog Pack": [
-    "boar",
-    "dog",
-    "tiger",
-    "monkey",
-    "ram"
-  ],
-  "Summon Reincarnation to the Impure World": [
-    "tiger",
-    "dog",
-    "dragon"
-  ],
-  "Summoning Jutsu": [
-    "boar",
-    "dog",
-    "monkey",
-    "bird",
-    "ram"
-  ],
-  "Tile Shuriken": [
-    "tiger",
-    "dragon",
-    "rat",
-    "tiger"
-  ],
-  "Time Reversal Jutsu": [
-    "dog",
-    "snake",
-    "ox",
-    "bird",
-    "tiger"
-  ]
+  "['tiger', 'dog', 'ox', 'hare', 'tiger']": "Fire Element; Fire Dragon Missile",
+  "['rat', 'horse', 'dragon', 'ox', 'tiger']": "Fire Element; Fire Dragon Flame Missile",
+  "['snake', 'tiger', 'monkey', 'boar', 'horse', 'tiger']": "Fire Element; Toad Oil Fire Bullet",
+  "['snake', 'dragon', 'hare', 'tiger']": "Fire Element; Dragon Fire Technique",
+  "['snake', 'ram', 'monkey', 'boar', 'horse', 'tiger']": "Fire Element; Flame Blowing",
+  "['snake', 'tiger', 'dog', 'ox', 'hare', 'tiger']": "Fire Element; Phoenix Jutsu",
+  "['rat', 'dog', 'ox', 'hare', 'tiger']": "Fire Element; Phoenix Flower Jutsu",
+  "['snake', 'tiger', 'monkey', 'horse', 'tiger']": "Fire Element; Blazing Fireball Jutsu",
+  "['snake', 'tiger', 'dragon', 'hare', 'tiger']": "Fire Element; Flame Dragon Jutsu",
+  "['tiger', 'boar', 'dog']": "Ice Element; Piercing Dragon Fierce Tiger",
+  "['snake', 'rat', 'dragon', 'monkey', 'tiger', 'bird', 'horse', 'boar', 'dog']": "Ice Element; Double Black Dragon Blizzard",
+  "['snake', 'hare', 'dog']": "Ice Element; Rouge Nature Jutsu",
+  "['bird', 'snake', 'monkey', 'tiger', 'dog']": "Ice Element; Black Dragon Blizzard",
+  "['ram', 'horse', 'dragon']": "Earth Element; Earth Dragon Missile",
+  "['tiger']": "A Thousand Years of Pain",
+  "['ox', 'tiger', 'ox', 'tiger']": "Water Element; Water Dragon Bullet",
+  "['tiger', 'snake', 'tiger']": "Water Element; Black Rain",
+  "['ram', 'snake', 'tiger', 'hare', 'snake', 'dragon', 'hare']": "Water Element; Water Prison Jutsu",
+  "['tiger', 'ox', 'monkey', 'hare', 'ram', 'boar', 'ox', 'horse', 'monkey', 'tiger', 'dog', 'tiger', 'snake', 'tiger', 'ox', 'monkey', 'hare', 'bird']": "Water Element; Water Vortex Jutsu",
+  "['ox', 'monkey', 'hare', 'rat', 'boar', 'bird', 'ox', 'horse', 'bird', 'tiger', 'dog', 'tiger', 'snake', 'ox', 'ram', 'snake', 'ram', 'ox', 'monkey', 'bird', 'dragon', 'ox', 'horse', 'ram', 'tiger', 'snake', 'rat', 'ox', 'monkey', 'bird', 'rat', 'boar', 'monkey', 'dragon', 'bird', 'ox', 'horse', 'ram', 'tiger', 'snake', 'rat', 'monkey', 'hare', 'boar', 'dragon', 'ox', 'rat', 'ox', 'monkey', 'bird', 'rat', 'boar', 'bird']": "Water Element; Water Dragon Jutsu",
+  "['tiger', 'boar', 'ox', 'dog']": "Academy Ninja Clone Jutsu",
+  "['dog', 'boar', 'tiger']": "Academy Ninja Transformation Jutsu",
+  "['ox', 'hare', 'monkey']": "Chidori",
+  "['snake', 'dragon', 'horse', 'bird', 'dog', 'ox', 'hare', 'monkey']": "Chidori Level 2",
+  "['dog', 'ox', 'hare']": "Chidori Level 3",
+  "['hare', 'bird', 'snake', 'horse', 'monkey', 'horse', 'ram', 'rat']": "Cursed Seal Jutsu",
+  "['snake', 'boar', 'ram', 'hare', 'dog', 'rat', 'bird', 'horse', 'snake']": "Death God Summon",
+  "['boar', 'dog', 'bird', 'monkey', 'ram']": "Demonic Illusion; Hell Decent Jutsu",
+  "['dog', 'snake', 'bird', 'tiger']": "Reversal Jutsu",
+  "['tiger', 'ox', 'dog']": "Sakura's Clone Jutsu",
+  "['snake', 'tiger']": "Shadow Clone",
+  "['tiger', 'boar', 'ox', 'snake']": "Substitution Jutsu",
+  "['boar', 'dog', 'tiger', 'monkey', 'ram']": "Summon Dog Pack",
+  "['tiger', 'dog', 'dragon']": "Summon Reincarnation to the Impure World",
+  "['boar', 'dog', 'monkey', 'bird', 'ram']": "Summoning Jutsu",
+  "['tiger', 'dragon', 'rat', 'tiger']": "Tile Shuriken",
+  "['dog', 'snake', 'ox', 'bird', 'tiger']": "Time Reversal Jutsu"
 }

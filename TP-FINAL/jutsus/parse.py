@@ -1,7 +1,7 @@
 import json
 
 input_file = "lista.txt"
-output_file = "secuencias.json"
+output_file = "jutsus.json"
 
 secuencias = {}
 
@@ -34,7 +34,7 @@ with open(input_file, "r", encoding="utf-8") as f:
         elementos_sin_nones = [e for e in elementos if e is not None]
         # Solo guardar secuencias no vacias
         if elementos_sin_nones:
-            secuencias[nombre] = elementos_sin_nones
+            secuencias[str(elementos_sin_nones)] = nombre
 
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(secuencias, f, ensure_ascii=False, indent=2)
